@@ -3,4 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--背景颜色,浅灰色-->
+    <color name="ChatBackgroundColor">#F3F3F3</color>
+    <!--灰色，字体灰-->
+    <color name="gray">#7E7979</color>
+    <!--蓝色-->
+    <color name="ChatBlueColor">#18B4ED</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+
 </resources>
