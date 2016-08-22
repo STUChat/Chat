@@ -11,10 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".view.activity.MainActivity"
-            android:launchMode="singleInstance"
-            >
+        <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,13 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.RegisterActivity" />
-        <activity android:name=".view.api.BaseActivity" />
-        <activity android:name=".view.activity.WelcomeActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
+        <activity android:name=".view.activity.LoginActivity"></activity>
+        <activity android:name=".view.activity.ForgotActivity"></activity>
+        <activity android:name=".view.api.BaseActivity"></activity>
     </application>
 
 </manifest>

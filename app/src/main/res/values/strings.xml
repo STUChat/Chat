@@ -2,14 +2,21 @@
     <string name="app_name">Chat</string>
 
     <!-- 注册 -->
-    <string name="nick_name">昵称</string>
-    <string name="password">密码</string>
-    <string name="land">登陆</string>
+    <string name="register_nick_name">昵称</string>
+    <string name="register_password">密码</string>
+    <string name="register_land">登陆</string>
     <string name="register_hint_email_or_phone">请输入邮箱或者手机号</string>
     <string name="register_hint_password">请输入密码</string>
     <string name="register_hint_confirm_password">请确认密码</string>
     <string name="register_hint_nick_name">请输入昵称</string>
     <string name="register_bn_text">注册</string>
     <string name="clickme">clickme</string>
+
+    <!--忘记密码-->
+    <string name="forgot_password">忘记密码</string>
+    <string name="forgot_hint_email_or_phone">请输入邮箱或者手机号</string>
+    <string name="forgot_get_codes">获取验证码</string>
+    <string name="forgot_new_pwd">新密码</string>
+    <string name="forgot_confirm">确认</string>
 
 </resources>
