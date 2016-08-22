@@ -20,4 +20,10 @@
     <string name="forgot_new_pwd">新密码</string>
     <string name="forgot_confirm">确认</string>
 
+    <!--tab-->
+    <string name="tab_messaging">消息</string>
+    <string name="tab_contact">通信录</string>
+    <string name="tab_mine">我的</string>
+
+
 </resources>

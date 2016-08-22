@@ -21,6 +21,6 @@
     <!--控件与边框的间距-->
     <dimen name="border_magin">10dp</dimen>
 
-
-    
+    <!-- tab高度 -->
+    <dimen name="tab_height_size">30dp</dimen>
 </resources>

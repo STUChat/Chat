@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab_messaging"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/image_messaging"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height_size"
+                android:layout_gravity="top|center"
+                android:src="@drawable/tab_selector_messaging"/>
+
+            <TextView
+                android:id="@+id/text_messaging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="2dp"
+                android:textColor="@drawable/tab_selector_color"
+                android:text="@string/tab_messaging"
+                android:textSize="@dimen/default_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/image_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height_size"
+                android:layout_gravity="top|center"
+                android:src="@drawable/tab_selector_contact"/>
+
+            <TextView
+                android:id="@+id/text_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="2dp"
+                android:textColor="@drawable/tab_selector_color"
+                android:text="@string/tab_contact"
+                android:textSize="@dimen/default_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/image_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height_size"
+                android:layout_gravity="top|center"
+                android:src="@drawable/tab_selector_mine"/>
+
+            <TextView
+                android:id="@+id/text_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="2dp"
+                android:textColor="@drawable/tab_selector_color"
+                android:text="@string/tab_mine"
+                android:textSize="@dimen/default_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>
