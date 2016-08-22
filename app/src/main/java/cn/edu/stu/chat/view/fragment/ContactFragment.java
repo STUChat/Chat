@@ -24,7 +24,7 @@ public class ContactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // TODO Auto-generated method stub
-        View view = inflater.inflate(R.layout.fragment_messaging, null);
+        View view = inflater.inflate(R.layout.fragment_contact, null);
         return view;
     }
 }
