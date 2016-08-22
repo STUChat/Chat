@@ -6,13 +6,14 @@
     android:layout_height="@dimen/toolbar_size"
     android:background="@color/ChatBlueColor">
 
-    <ImageButton
+    <Button
         android:id="@+id/left_toolbtn"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="35dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary" />
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_centerVertical="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@mipmap/ic_keyboard_backspace_normal"/>
 
     <TextView
         android:id="@+id/toolbar_title"
@@ -24,12 +25,13 @@
         android:text="@string/app_name"
         android:textSize = "@dimen/title_font_size"/>
 
-    <ImageButton
+    <Button
         android:id="@+id/right_toolbtn"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="35dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"/>
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_centerVertical="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@mipmap/ic_more_vert_normal"/>
 
 </RelativeLayout>

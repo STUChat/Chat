@@ -6,6 +6,9 @@
     <!--默认字体大小，正常字体的大小，如果需要更大或者更小的字体，请重新定义一个-->
     <dimen name="default_font_size">14sp</dimen>
 
+    <!-- 自定义字体 -->
+    <dimen name="middle_font_size">18sp</dimen>
+
     <!-- 标题栏大小-->
     <dimen name="toolbar_size">40dp</dimen>
 
