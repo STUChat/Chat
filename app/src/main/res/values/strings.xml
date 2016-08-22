@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Chat</string>
+
+    <!-- 注册 -->
+    <string name="nick_name">昵称</string>
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+
 </resources>
