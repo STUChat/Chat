@@ -2,6 +2,7 @@ package cn.edu.stu.chat.model;
 
 /**
  * Created by Terence on 2016/8/22.
+ * 常量类
  */
 public class Constant {
     /*
