@@ -15,5 +15,8 @@ public class Constant {
      */
     public final static String LOGIN = HOST + "/test";
 
-
+    /*
+     *注册Activity的标题
+     */
+    public final static String RegisterTitle = "注册";
 }

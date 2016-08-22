@@ -9,8 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".view.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--跳转到注册activity，测试使用，之后会删-->
+    <Button
+        android:id="@+id/to_register"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:background="@color/ChatBlueColor"
+        android:text="@string/clickme"
+        android:textColor="@color/white"
+        />
 </RelativeLayout>

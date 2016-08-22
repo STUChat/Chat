@@ -3,14 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/ChatBackgroundColor"
     tools:context="cn.edu.stu.chat.view.activity.RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar"
+        />
+
+    <!--注册账号-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/register_hint_email_or_phone"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginTop="@dimen/border_magin"
 
+        />
+    <!--昵称-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_hint_nick_name"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginTop="@dimen/border_magin"
+        />
+    <!--密码-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_hint_password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginTop="@dimen/border_magin"
+        />
+    <!--确认密码-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_hint_confirm_password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginTop="@dimen/border_magin"
+
+        />
+    <Button
+        android:id="@+id/register_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_button"
+        android:text="@string/register_bn_text"
+        android:textSize="@dimen/title_font_size"
+        android:layout_margin="@dimen/border_magin"
+        android:textColor="@color/white"
         />
 </LinearLayout>
