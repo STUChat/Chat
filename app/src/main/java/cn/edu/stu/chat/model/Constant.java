@@ -19,4 +19,6 @@ public class Constant {
      *注册Activity的标题
      */
     public final static String RegisterTitle = "注册";
+
+
 }
