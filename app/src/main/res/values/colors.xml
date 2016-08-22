@@ -13,5 +13,6 @@
     <color name="white">#FFFFFF</color>
     <!--黑色-->
     <color name="black">#000000</color>
-
+    <!--红色-->
+    <color name="red">#EE6658</color>
 </resources>

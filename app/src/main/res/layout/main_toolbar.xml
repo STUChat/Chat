@@ -4,7 +4,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/toolbar_size"
-    android:background="?attr/colorPrimary">
+    android:background="@color/ChatBlueColor">
 
     <Button
         android:id="@+id/left_toolbtn"
