@@ -37,10 +37,10 @@ public class WelcomePresenter implements IWelcomePresenter {
 
 
              */
-            //模拟登陆操作
+            //模拟登陆操作*****************************************
             user = new User();
             user.setLoginState(true);
-            //模拟登陆操作
+            //模拟登陆操作*****************************************
 
             if(user.isLoginState())
                 return true;

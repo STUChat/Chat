@@ -27,8 +27,8 @@ public class WelcomeActivity extends Activity implements IWelcomeView {
         presenter = new WelcomePresenter(this);
 
         //要记得删除，这里是为了能进入主界面进行调试***********************************************************
-        SharedPreferencesHelper.setParam(this,"username","lawliex");
-        SharedPreferencesHelper.setParam(this,"password","lawliex");
+//        SharedPreferencesHelper.setParam(this,"username","lawliex");
+//        SharedPreferencesHelper.setParam(this,"password","lawliex");
 
         //要记得删除，这里是为了能进入主界面进行调试***********************************************************
 
