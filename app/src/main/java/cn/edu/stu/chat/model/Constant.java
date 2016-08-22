@@ -25,4 +25,9 @@ public class Constant {
      */
     public final static String RegisterTitle = "注册";
 
+    /**
+     * 欢迎页面跳转时间
+     */
+    public final static long WELCOME_JUMP_TIME = 2000;
+
 }
