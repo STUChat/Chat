@@ -18,4 +18,24 @@
         android:text="@string/clickme"
         android:textColor="@color/white"
         />
+    <Button
+        android:id="@+id/to_login"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below= "@+id/to_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ChatBlueColor"
+        android:text="@string/clickme"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/to_forgot"
+        android:layout_below="@+id/to_login"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ChatBlueColor"
+        android:text="@string/clickme"
+        android:textColor="@color/white"
+        />
 </RelativeLayout>
