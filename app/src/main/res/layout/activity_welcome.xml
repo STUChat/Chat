@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.stu.chat.view.activity.WelcomeActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome_bg"
+        />
+    <Button
+        android:id="@+id/welcome_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_tv_click"
+        android:background="@drawable/welcome_button"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        />
+</FrameLayout>
