@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\lawliex\\Chat\\Chat\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "D:\\lawliex\\Android\\Chat\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
