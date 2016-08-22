@@ -11,6 +11,7 @@
     <string name="register_hint_nick_name">请输入昵称</string>
     <string name="register_bn_text">注册</string>
     <string name="clickme">clickme</string>
+    <string name="welcome_tv_click">点击体验</string>
 
     <!--忘记密码-->
     <string name="forgot_password">忘记密码</string>
