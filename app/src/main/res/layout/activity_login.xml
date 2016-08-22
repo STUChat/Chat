@@ -70,8 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/border_magin"
-        android:background="@color/colorPrimary"
-        android:text="@string/register"
+        android:background="@drawable/corner_button"
+        android:text="@string/land"
         android:textSize="@dimen/middle_font_size"
         android:textColor="@color/white"/>
 

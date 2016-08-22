@@ -56,7 +56,6 @@
         android:layout_marginLeft="@dimen/border_magin"
         android:layout_marginRight="@dimen/border_magin"
         android:layout_marginTop="@dimen/border_magin"
-
         />
     <Button
         android:id="@+id/register_bn"
