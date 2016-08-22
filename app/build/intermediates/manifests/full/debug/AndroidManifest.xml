@@ -25,6 +25,8 @@
             </intent-filter>
         </activity>
         <activity android:name="cn.edu.stu.chat.view.activity.RegisterActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.LoginActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.ForgotActivity" />
         <activity android:name="cn.edu.stu.chat.view.api.BaseActivity" />
     </application>
 

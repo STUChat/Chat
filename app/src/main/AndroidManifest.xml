@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.RegisterActivity" />
+        <activity android:name=".view.activity.LoginActivity"></activity>
+        <activity android:name=".view.activity.ForgotActivity"></activity>
         <activity android:name=".view.api.BaseActivity"></activity>
     </application>
 
