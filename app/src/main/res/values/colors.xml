@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <!--背景颜色,浅灰色-->
     <color name="ChatBackgroundColor">#F3F3F3</color>
+    <!--背景颜色，较深灰色-->
+    <color name="ChatBackgroundColor2">#ececec</color>
     <!--灰色，字体灰-->
     <color name="gray">#7E7979</color>
     <!--蓝色-->

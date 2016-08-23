@@ -25,5 +25,9 @@
     <string name="tab_contact">通信录</string>
     <string name="tab_mine">我的</string>
 
-
+    <!--我的-->
+    <string name="mine_setting">设置</string>
+    <string name="mine_share">分享</string>
+    <string name="mine_feedback">反馈</string>
+    <string name="mine_default_nickname">猜猜我是谁</string>
 </resources>
