@@ -30,4 +30,8 @@ public class Constant {
      */
     public final static long WELCOME_JUMP_TIME = 2000;
 
+    /*
+     *登陆Activity的标题
+     */
+    public final static String LoginTitle = "登陆";
 }
