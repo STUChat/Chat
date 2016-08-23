@@ -3,6 +3,7 @@ package cn.edu.stu.chat.presenter;
 import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.api.IWelcomePresenter;
 import cn.edu.stu.chat.view.api.IWelcomeView;
+import cn.edu.stu.chat.view.api.MvpView;
 
 /**
  * Created by Terence on 2016/8/22.
@@ -12,8 +13,8 @@ public class WelcomePresenter implements IWelcomePresenter {
     private IWelcomeView welcomeView;
     private String username;
     private String password;
-    public WelcomePresenter(IWelcomeView welcomeView){
-        this.welcomeView = welcomeView;
+    public WelcomePresenter(){
+
     }
     @Override
     public boolean isSavePassword() {
@@ -51,5 +52,15 @@ public class WelcomePresenter implements IWelcomePresenter {
     @Override
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public void attach(MvpView view) {
+        this.welcomeView = (IWelcomeView)view;
+    }
+
+    @Override
+    public void deAttach() {
+        this.welcomeView = null;
     }
 }

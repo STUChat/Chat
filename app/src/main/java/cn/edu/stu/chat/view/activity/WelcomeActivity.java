@@ -24,8 +24,8 @@ public class WelcomeActivity extends Activity implements IWelcomeView {
         setContentView(R.layout.activity_welcome);
         button = (Button)findViewById(R.id.welcome_button);
         app = (ChatApp) getApplicationContext();
-        presenter = new WelcomePresenter(this);
-
+        presenter = new WelcomePresenter();
+        presenter.attach(this);
         //要记得删除，这里是为了能进入主界面进行调试***********************************************************
 //        SharedPreferencesHelper.setParam(this,"username","lawliex");
 //        SharedPreferencesHelper.setParam(this,"password","lawliex");
@@ -70,5 +70,11 @@ public class WelcomeActivity extends Activity implements IWelcomeView {
     public void jumpToActivity(Class<? extends Activity> activityClass) {
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.deAttach();
     }
 }

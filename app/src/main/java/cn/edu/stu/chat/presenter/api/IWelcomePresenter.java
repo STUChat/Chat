@@ -7,7 +7,7 @@ import cn.edu.stu.chat.model.User;
 /**
  * Created by Terence on 2016/8/22.
  */
-public interface IWelcomePresenter {
+public interface IWelcomePresenter extends IPresenter{
 
     public boolean isSavePassword();
     public boolean login();
