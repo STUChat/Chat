@@ -21,6 +21,7 @@
             android:textSize="@dimen/middle_font_size"/>
 
         <EditText
+            android:id="@+id/login_nick_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/border_magin"
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/login_pwd_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/border_magin"
@@ -58,15 +60,18 @@
                 android:maxLength="20"/>
 
             <ImageView
+                android:id="@+id/login_eye"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:src="@mipmap/landing_close_eye_image"/>
+                android:src="@mipmap/landing_close_eye_image"
+                android:clickable="true"/>
         </LinearLayout>
     </LinearLayout>
 
     <Button
+        android:id="@+id/login_landing_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/border_magin"
@@ -75,4 +80,31 @@
         android:textSize="@dimen/middle_font_size"
         android:textColor="@color/white"/>
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginRight="@dimen/border_magin">
+        <TextView
+            android:id="@+id/login_forgot_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/border_magin"
+            android:layout_marginLeft="@dimen/login_forgot_magin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_font_size"
+            android:text="@string/forgot_password"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/login_register_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/border_magin"
+            android:layout_marginRight="@dimen/login_register_magin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_font_size"
+            android:text="@string/register_bn_text"
+            android:clickable="true"/>
+    </RelativeLayout>
 </LinearLayout>
