@@ -29,7 +29,6 @@ import rx.schedulers.Schedulers;
  * HttpMethods.getInstance().get(path, map);
  */
 public class HttpMethods {
-    private static String baseUrl1 = "http://172.29.252.1:8080";
     private static String baseUrl = "http://119.29.82.22:8880";
     volatile private static HttpMethods instance = null;
     private Observable<ChatResponse> observable;
@@ -46,18 +45,20 @@ public class HttpMethods {
         return instance;
     }
     private HttpMethods(){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .build();
+        httpService = retrofit.create(HttpApi.class);
         //默认subscriber
         subscriber = new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {
-
             }
-
             @Override
             public void onError(Throwable e) {
-
             }
-
             @Override
             public void onNext(ChatResponse chatResponse) {
                 response = chatResponse;
@@ -67,19 +68,10 @@ public class HttpMethods {
 
     //Get和Post方法返回的值有可能为null，代表请求不成功
     public ChatResponse post(String path, Map<String, String> map) {
-
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(baseUrl)
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .build();
-        httpService = retrofit.create(HttpApi.class);
         if(map != null)
             observable = httpService.post(path, map);
         else
             observable = httpService.post(path);
-
-
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
@@ -88,19 +80,10 @@ public class HttpMethods {
 
     //Get和Post方法返回的值有可能为null，代表请求不成功
     public ChatResponse get(String path, Map<String,String> map) {
-
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(baseUrl)
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .build();
-        httpService = retrofit.create(HttpApi.class);
         if(map != null)
             observable = httpService.get(path, map);
         else
             observable = httpService.get(path);
-
-
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
@@ -113,5 +96,5 @@ public class HttpMethods {
     public HttpMethods subscribe(Subscriber<ChatResponse> subscriber){
         this.subscriber = subscriber;
         return instance;
-    }
+}
 }
