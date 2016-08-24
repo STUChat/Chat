@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.presenter.LoginPresenter;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
@@ -36,7 +38,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
-        presenter = new ILoginPresenter();
+        presenter = new LoginPresenter();
         presenter.attach(this);
         presenter.init();
         ButterKnife.bind(this);
@@ -53,7 +55,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
 
     @Override
     public void setMessage(String text) {
-
+        Toast.makeText(LoginActivity.this,text,Toast.LENGTH_SHORT).show();
     }
 
     @Override
