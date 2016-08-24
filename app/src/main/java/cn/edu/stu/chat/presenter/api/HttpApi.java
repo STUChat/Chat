@@ -5,6 +5,7 @@ import java.util.Map;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.User;
 import retrofit2.http.Field;
+import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -19,7 +20,7 @@ import rx.Observable;
 public interface HttpApi{
     @FormUrlEncoded
     @POST("{path}")
-    Observable<ChatResponse> post(@Path("path") String path, @QueryMap Map<String, String> map);
+    Observable<ChatResponse> post(@Path("path") String path, @FieldMap Map<String, String> map);
     @FormUrlEncoded
     @POST("{path}")
     Observable<ChatResponse> post(@Path("path") String path);

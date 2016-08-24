@@ -29,7 +29,7 @@ import rx.schedulers.Schedulers;
  * HttpMethods.getInstance().get(path, map);
  */
 public class HttpMethods {
-    private static String baseUrl = "http://119.29.82.22:8880";
+    private static String baseUrl = Constant.HOST;
     volatile private static HttpMethods instance = null;
     private Observable<ChatResponse> observable;
     private Subscriber subscriber;
@@ -56,8 +56,10 @@ public class HttpMethods {
             @Override
             public void onCompleted() {
             }
+
             @Override
             public void onError(Throwable e) {
+                response = null;
             }
             @Override
             public void onNext(ChatResponse chatResponse) {
@@ -68,10 +70,13 @@ public class HttpMethods {
 
     //Get和Post方法返回的值有可能为null，代表请求不成功
     public ChatResponse post(String path, Map<String, String> map) {
+        response = null;
         if(map != null)
             observable = httpService.post(path, map);
         else
             observable = httpService.post(path);
+
+
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
@@ -80,10 +85,13 @@ public class HttpMethods {
 
     //Get和Post方法返回的值有可能为null，代表请求不成功
     public ChatResponse get(String path, Map<String,String> map) {
+        response = null;
         if(map != null)
             observable = httpService.get(path, map);
         else
             observable = httpService.get(path);
+
+
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
