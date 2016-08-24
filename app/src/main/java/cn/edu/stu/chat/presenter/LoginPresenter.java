@@ -49,7 +49,7 @@ public class LoginPresenter implements ILoginPresenter {
         map.put("pwd",pwd);
         ChatResponse response = HttpMethods.getInstance()
                 .baseUrl(Constant.HOST)
-                .get("Test2.aspx",map);
+                .get(Constant.LOGIN, map);
         if(response != null)
             Log.e("lawliex",response.getResponseCode()+"111");
         else
