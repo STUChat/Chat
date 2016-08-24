@@ -15,6 +15,8 @@ public class Constant {
      */
     public final static String LOGIN = "Test2.aspx";
 
+    public final static String LOGIN2 = "Test.aspx";
+
     /*
      *shareperference文件名
      */
