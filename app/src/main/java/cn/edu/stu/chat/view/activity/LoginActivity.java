@@ -9,16 +9,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.edu.stu.chat.R;
-import cn.edu.stu.chat.model.ChatResponse;
-import cn.edu.stu.chat.presenter.HttpMethods;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
-import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
 
@@ -96,12 +92,9 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     }
     @OnClick(R.id.login_landing_btn)
     void login(){
-//        String nick = nickEdit.getText().toString();
-//        String pwd = pwdEdit.getText().toString();
-//        presenter.login(nick,pwd);
-        HttpMethods httpMethods = HttpMethods.getInstance(this);
-        ChatResponse response = httpMethods.get("Test2.aspx",null);
-
+        String nick = nickEdit.getText().toString();
+        String pwd = pwdEdit.getText().toString();
+        presenter.login(nick,pwd);
     }
     @OnClick(R.id.login_eye)
     void watchPassword(){
