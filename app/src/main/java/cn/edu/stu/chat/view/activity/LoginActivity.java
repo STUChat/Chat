@@ -14,7 +14,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.edu.stu.chat.R;
-import cn.edu.stu.chat.presenter.LoginPresenter;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
@@ -37,7 +36,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
-        presenter = new LoginPresenter();
+        presenter = new ILoginPresenter();
         presenter.attach(this);
         presenter.init();
         ButterKnife.bind(this);

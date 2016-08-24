@@ -36,7 +36,7 @@ public class WelcomeActivity extends Activity implements IWelcomeView {
             @Override
             public void run() {
                 try{
-                    Thread.sleep(Constant.WELCOME_JUMP_TIME);
+                   // Thread.sleep(Constant.WELCOME_JUMP_TIME);
                     if(presenter.login()){
                         jumpToActivity(MainActivity.class);
                     }else{

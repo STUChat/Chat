@@ -20,8 +20,14 @@ public interface HttpApi{
     @FormUrlEncoded
     @POST("{path}")
     Observable<ChatResponse> post(@Path("path") String path, @QueryMap Map<String, String> map);
+    @FormUrlEncoded
+    @POST("{path}")
+    Observable<ChatResponse> post(@Path("path") String path);
 
     @GET("{path}")
-    Observable<ChatResponse> get(@Path("path") String path, @QueryMap Map<String, String> map);
+    Observable<ChatResponse> get(@Path("path") String path,@QueryMap Map<String,String> map);
+
+    @GET("{path}")
+    Observable<ChatResponse> get(@Path("path") String path);
 
 }
