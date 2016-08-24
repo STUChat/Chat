@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'android-apt'
 android {
     compileSdkVersion 24
     buildToolsVersion "23.0.3"
@@ -25,5 +25,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.+'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.google.code.gson:gson:2.7'
+    compile 'com.jakewharton:butterknife:8.3.0'
+    apt 'com.jakewharton:butterknife-compiler:8.3.0'
 }

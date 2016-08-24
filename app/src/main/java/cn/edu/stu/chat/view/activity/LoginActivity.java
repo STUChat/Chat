@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 import cn.edu.stu.chat.view.api.BaseActivity;
@@ -18,11 +21,16 @@ import cn.edu.stu.chat.view.api.ILoginView;
 /**
  * Created by dell on 2016/8/22.
  */
-public class LoginActivity extends BaseActivity implements ILoginView,View.OnClickListener{
-    private EditText nickEdit;
-    private EditText pwdEdit;
-    private ImageView eyeView;
+public class LoginActivity extends BaseActivity implements ILoginView{
+    @BindView(R.id.login_nick_edit)
+    EditText nickEdit;
+    @BindView(R.id.login_pwd_edit)
+    EditText pwdEdit;
+    @BindView(R.id.login_eye)
+    ImageView eyeView;
+
     private ILoginPresenter presenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,17 +39,11 @@ public class LoginActivity extends BaseActivity implements ILoginView,View.OnCli
         presenter = new ILoginPresenter();
         presenter.attach(this);
         presenter.init();
+        ButterKnife.bind(this);
     }
 
     private void initView() {
         setToolbar(R.id.toolbar);
-        nickEdit = (EditText)findViewById(R.id.login_nick_edit);
-        pwdEdit = (EditText)findViewById(R.id.login_pwd_edit);
-        eyeView = (ImageView)findViewById(R.id.login_eye);
-        eyeView.setOnClickListener(this);
-        findViewById(R.id.login_forgot_btn).setOnClickListener(this);
-        findViewById(R.id.login_register_btn).setOnClickListener(this);
-        findViewById(R.id.login_landing_btn).setOnClickListener(this);
     }
 
     @Override
@@ -80,23 +82,23 @@ public class LoginActivity extends BaseActivity implements ILoginView,View.OnCli
         presenter.deAttach();
     }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.login_forgot_btn:
-                jumpToActivity(ForgotActivity.class);
-                break;
-            case R.id.login_register_btn:
-                jumpToActivity(RegisterActivity.class);
-                break;
-            case R.id.login_eye:
-                presenter.clickEye();
-                break;
-            case R.id.login_landing_btn:
-                String nick = nickEdit.getText().toString();
-                String pwd = pwdEdit.getText().toString();
-                presenter.login(nick,pwd);
-                break;
-        }
+    @OnClick(R.id.login_forgot_btn)
+    void forgotPassword(){
+        jumpToActivity(ForgotActivity.class);
     }
+    @OnClick(R.id.login_register_btn)
+    void toRegister(){
+        jumpToActivity(RegisterActivity.class);
+    }
+    @OnClick(R.id.login_landing_btn)
+    void login(){
+        String nick = nickEdit.getText().toString();
+        String pwd = pwdEdit.getText().toString();
+        presenter.login(nick,pwd);
+    }
+    @OnClick(R.id.login_eye)
+    void watchPassword(){
+        presenter.clickEye();
+    }
+
 }
