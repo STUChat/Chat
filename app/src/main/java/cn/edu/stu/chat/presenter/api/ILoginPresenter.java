@@ -1,5 +1,7 @@
 package cn.edu.stu.chat.presenter.api;
 
+import android.app.Activity;
+
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
@@ -35,6 +37,7 @@ public class ILoginPresenter implements IPresenter {
      */
     public void login(String nick,String pwd){
         loginView.jumpToActivity(MainActivity.class);
+        ((Activity)loginView).finish();
     }
 
     public void clickEye(){
