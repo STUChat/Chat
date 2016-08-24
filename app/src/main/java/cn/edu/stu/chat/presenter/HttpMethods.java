@@ -22,33 +22,54 @@ import rx.schedulers.Schedulers;
 
 /**
  * Created by Terence on 2016/8/24.
+ * Get和Post方法返回的值有可能为null，代表请求不成功
+ * 调用方法
+ * HttpMethods.getInstance().baseUrl(url).subscribe(subscriber).get(path, map);
+ * 或者
+ * HttpMethods.getInstance().get(path, map);
  */
 public class HttpMethods {
-    private static String baseUrl = "http://172.29.252.1:8080";
-    private static String baseUrl1 = "http://119.29.82.22:8880";
+    private static String baseUrl1 = "http://172.29.252.1:8080";
+    private static String baseUrl = "http://119.29.82.22:8880";
     volatile private static HttpMethods instance = null;
-    private Observable observable;
+    private Observable<ChatResponse> observable;
     private Subscriber subscriber;
     private HttpApi httpService;
-    private static Activity context;
     private ChatResponse response;
-    public static HttpMethods getInstance(Activity activity) {
+    public static HttpMethods getInstance() {
         if (instance == null) {
             synchronized (HttpMethods.class) {
                 if (instance == null)
-                    instance = new HttpMethods(activity);
+                    instance = new HttpMethods();
             }
         }
-        context = activity;
         return instance;
     }
-    private HttpMethods(Activity activity){
-        context = activity;
+    private HttpMethods(){
+        //默认subscriber
+        subscriber = new Subscriber<ChatResponse>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(ChatResponse chatResponse) {
+                response = chatResponse;
+            }
+        };
     }
+
+    //Get和Post方法返回的值有可能为null，代表请求不成功
     public ChatResponse post(String path, Map<String, String> map) {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(baseUrl1)
+                .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
@@ -61,29 +82,15 @@ public class HttpMethods {
 
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<ChatResponse>() {
-                    @Override
-                    public void onCompleted() {
-                        ToastHelper.showToast(context, "complete");
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-                        ToastHelper.showToast(context,  e.toString());
-                    }
-
-                    @Override
-                    public void onNext(ChatResponse chatResponse) {
-                        ToastHelper.showToast(context, String.format("" +chatResponse.toString() ));
-                    }
-                });
+                .subscribe(subscriber);
         return  response;
     }
 
+    //Get和Post方法返回的值有可能为null，代表请求不成功
     public ChatResponse get(String path, Map<String,String> map) {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(baseUrl1)
+                .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
@@ -96,22 +103,15 @@ public class HttpMethods {
 
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<ChatResponse>() {
-                    @Override
-                    public void onCompleted() {
-                        ToastHelper.showToast(context, "complete");
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-                        ToastHelper.showToast(context,  e.toString());
-                    }
-
-                    @Override
-                    public void onNext(ChatResponse chatResponse) {
-                        ToastHelper.showToast(context, String.format("" +chatResponse.toString() ));
-                    }
-                });
+                .subscribe(subscriber);
         return  response;
+    }
+    public HttpMethods baseUrl(String url){
+        baseUrl = url;
+        return instance;
+    }
+    public HttpMethods subscribe(Subscriber<ChatResponse> subscriber){
+        this.subscriber = subscriber;
+        return instance;
     }
 }

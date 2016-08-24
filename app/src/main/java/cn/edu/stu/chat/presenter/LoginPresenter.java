@@ -1,10 +1,13 @@
 package cn.edu.stu.chat.presenter;
 
 import android.util.Log;
+
+import java.util.HashMap;
+
+import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
-import cn.edu.stu.chat.utils.HttpWork;
-import cn.edu.stu.chat.utils.ResponseResult;
+
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
 import cn.edu.stu.chat.view.api.MvpView;
@@ -41,25 +44,18 @@ public class LoginPresenter implements ILoginPresenter {
      * @param pwd
      */
     public void login(String nick,String pwd){
-        Observable observable = HttpWork.getInstance().getApiService().test("Test2.aspx");
-        Subscriber<ResponseResult> subscriber = new Subscriber<ResponseResult>() {
-            @Override
-            public void onCompleted() {
-                loginView.setMessage("complete");
-            }
+        HashMap<String, String> map = new HashMap<>();
+        map.put("nick",nick);
+        map.put("pwd",pwd);
+        ChatResponse response = HttpMethods.getInstance()
+                .baseUrl(Constant.HOST)
+                .get("Test2.aspx",map);
+        if(response != null)
+            Log.e("lawliex",response.getResponseCode()+"111");
+        else
+            Log.e("lawliex","null");
 
-            @Override
-            public void onError(Throwable e) {
-                Log.e(TAG,e.getMessage());
-            }
 
-            @Override
-            public void onNext(ResponseResult o) {
-                loginView.setMessage(o.toString());
-                Log.e(TAG, "onNext: "+o.toString());
-            }
-        };
-        HttpWork.getInstance().excute(observable,subscriber);
     }
 
     public void clickEye(){
