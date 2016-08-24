@@ -8,7 +8,7 @@ public class Constant {
     /*
      *服务器地址
      */
-    public final static String HOST = "http://test.com";
+    public final static String HOST = "http://119.29.82.22:8880";
 
     /*
      *登录接口
