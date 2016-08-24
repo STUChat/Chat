@@ -1,7 +1,6 @@
 package cn.edu.stu.chat.presenter;
 
 import android.util.Log;
-
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 import cn.edu.stu.chat.utils.HttpWork;
@@ -42,8 +41,25 @@ public class LoginPresenter implements ILoginPresenter {
      * @param pwd
      */
     public void login(String nick,String pwd){
-        loginView.jumpToActivity(MainActivity.class);
+        Observable observable = HttpWork.getInstance().getApiService().test("Test2.aspx");
+        Subscriber<ResponseResult> subscriber = new Subscriber<ResponseResult>() {
+            @Override
+            public void onCompleted() {
+                loginView.setMessage("complete");
+            }
 
+            @Override
+            public void onError(Throwable e) {
+                Log.e(TAG,e.getMessage());
+            }
+
+            @Override
+            public void onNext(ResponseResult o) {
+                loginView.setMessage(o.toString());
+                Log.e(TAG, "onNext: "+o.toString());
+            }
+        };
+        HttpWork.getInstance().excute(observable,subscriber);
     }
 
     public void clickEye(){
