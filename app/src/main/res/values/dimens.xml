@@ -2,7 +2,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    
+
     <!--默认字体大小，正常字体的大小，如果需要更大或者更小的字体，请重新定义一个-->
     <dimen name="default_font_size">14sp</dimen>
 
@@ -14,7 +14,7 @@
 
     <!--标题栏字体大小-->
     <dimen name="title_font_size">20sp</dimen>
-    
+
     <!--默认行距，粗略设置，后期可以调整-->
     <dimen name="default_vertical_spacing">10dp</dimen>
 
@@ -43,4 +43,6 @@
     <!--个人信息-->
     <dimen name="user_info_photo_size">50dp</dimen>
 
+    <dimen name="message_input_bar_img_height">40dp</dimen>
+    <dimen name="message_photo_size">30dp</dimen>
 </resources>
