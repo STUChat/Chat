@@ -39,11 +39,9 @@
         <activity android:name=".view.activity.SearchFriendActivity" />
         <activity android:name=".view.api.BaseActivity" />
         <activity android:name=".view.activity.MessageActivity"></activity>
-        <activity android:name=".view.activity.LoginActivity"></activity>
-        <activity android:name=".view.activity.ForgotActivity"></activity>
-        <activity android:name=".view.activity.SearchFriendActivity"></activity>
+
         <activity android:name=".view.activity.UserInfoActivity"></activity>
-        <activity android:name=".view.api.BaseActivity"></activity>
+
     </application>
 
 </manifest>

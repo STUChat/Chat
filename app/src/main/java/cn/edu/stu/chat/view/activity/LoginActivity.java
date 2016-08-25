@@ -21,7 +21,6 @@ import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
-import cn.pedant.SweetAlert.SweetAlertDialog;
 
 /**
  * Created by dell on 2016/8/22.
@@ -33,7 +32,6 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     EditText pwdEdit;
     @BindView(R.id.login_eye)
     ImageView eyeView;
-    private SweetAlertDialog pDialog;
     private ILoginPresenter presenter;
 
     @Override
