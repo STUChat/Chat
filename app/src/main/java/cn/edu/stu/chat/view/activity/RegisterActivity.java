@@ -14,10 +14,9 @@ import butterknife.OnClick;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.utils.ToastHelper;
+import cn.edu.stu.chat.view.api.BaseActivity;
 
-public class RegisterActivity extends Activity{
-    private View toolbar;
-    private TextView title;
+public class RegisterActivity extends BaseActivity {
 
     @BindView(R.id.register_bn)
     Button registerButton;
@@ -37,9 +36,8 @@ public class RegisterActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        toolbar = (View)findViewById(R.id.toolbar);
-        title = (TextView) toolbar.findViewById(R.id.toolbar_title);
-        title.setText(Constant.RegisterTitle);
+        setToolbar(R.id.toolbar);
+        setTitle(Constant.RegisterTitle);
         ButterKnife.bind(this);
     }
 }

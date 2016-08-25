@@ -15,10 +15,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.presenter.LoginPresenter;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
+import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 /**
  * Created by dell on 2016/8/22.
@@ -30,7 +33,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     EditText pwdEdit;
     @BindView(R.id.login_eye)
     ImageView eyeView;
-
+    private SweetAlertDialog pDialog;
     private ILoginPresenter presenter;
 
     @Override
@@ -54,8 +57,23 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     }
 
     @Override
-    public void setMessage(String text) {
-        Toast.makeText(LoginActivity.this,text,Toast.LENGTH_SHORT).show();
+    public void showMessage(String text) {
+        ToastHelper.showDialog(this,Constant.LoginTitle,text);
+    }
+
+    @Override
+    public void showErrorMessage(String text){
+        ToastHelper.showErrorDialog(this,Constant.LoginTitle,text);
+    }
+
+    @Override
+    public void showLanding(){
+
+    }
+
+    @Override
+    public void hideLanding(){
+
     }
 
     @Override

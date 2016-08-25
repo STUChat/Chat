@@ -31,6 +31,7 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.jakewharton:butterknife:8.3.0'
+    compile 'cn.pedant.sweetalert:library:1.2'
     apt 'com.jakewharton:butterknife-compiler:8.3.0'
 
 }

@@ -36,4 +36,11 @@
     <dimen name="mine_nickname_left_margin">30dp</dimen>
     <dimen name="mine_info_size">100dp</dimen>
     <dimen name="mine_item_size">35dp</dimen>
+
+    <!--联系人-->
+    <dimen name="contact_photo_size">30dp</dimen>
+
+    <!--个人信息-->
+    <dimen name="user_info_photo_size">50dp</dimen>
+
 </resources>

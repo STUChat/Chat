@@ -7,10 +7,12 @@
     android:weightSum="1">
     <include layout="@layout/main_toolbar"/>
     <LinearLayout
+        android:id="@+id/mine_user"
         android:layout_width="match_parent"
         android:layout_height="@dimen/mine_info_size"
         android:orientation="horizontal"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:clickable="true">
         <cn.edu.stu.chat.view.widget.CircleImageView
             android:id="@+id/mine_photo"
             android:layout_width="@dimen/mine_photo_size"
