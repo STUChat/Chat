@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/main_toolbar"
+        />
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/border_magin"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/message_input_bar_img_height"
+            android:layout_height="@dimen/message_input_bar_img_height"
+            android:background="@drawable/ic_wifi_blue_grey_900_18dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/message_input_bar_img_height"
+            android:layout_height="@dimen/message_input_bar_img_height"
+            android:background="@drawable/ic_face_grey_800_18dp" />
+
+        <ImageView
+            android:layout_width="@dimen/message_input_bar_img_height"
+            android:layout_height="@dimen/message_input_bar_img_height"
+            android:background="@drawable/ic_add_circle_outline_blue_grey_800_18dp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_toolbar"
+        android:layout_above="@id/input_layout"
+        >
+    </ListView>
+</RelativeLayout>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/main_toolbar"/>
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/main_toolbar"
+        />
+    <ListView
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="聊天"/>
-</LinearLayout>
+        android:layout_below="@id/main_toolbar"
+        >
+
+    </ListView>
+</RelativeLayout>
