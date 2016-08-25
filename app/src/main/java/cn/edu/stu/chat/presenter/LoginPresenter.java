@@ -5,6 +5,7 @@ import android.util.Log;
 import java.util.HashMap;
 import java.util.List;
 
+import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.UserInfo;
@@ -14,8 +15,6 @@ import cn.edu.stu.chat.utils.JsonHelper;
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
 import cn.edu.stu.chat.view.api.MvpView;
-import rx.Observable;
-import rx.Subscriber;
 
 /**
  * Created by dell on 2016/8/23.
@@ -61,7 +60,7 @@ public class LoginPresenter implements ILoginPresenter {
             }
         }else
             Log.e("lawliex","null");
-
+        loginView.jumpToActivity(MainActivity.class);
     }
 
     public void clickEye(){

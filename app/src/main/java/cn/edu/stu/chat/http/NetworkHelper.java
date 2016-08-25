@@ -1,4 +1,4 @@
-package cn.edu.stu.chat.utils;
+package cn.edu.stu.chat.http;
 
 import android.content.Context;
 import android.location.LocationManager;
