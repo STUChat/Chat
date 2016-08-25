@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/contact_add_friend"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/contact_add_friend"
+        android:icon="@mipmap/ic_launcher"/>
+</menu>

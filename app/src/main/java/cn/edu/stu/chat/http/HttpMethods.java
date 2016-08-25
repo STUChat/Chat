@@ -1,23 +1,15 @@
-package cn.edu.stu.chat.presenter;
-
-import android.app.Activity;
+package cn.edu.stu.chat.http;
 
 import java.util.Map;
 
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
-import cn.edu.stu.chat.model.User;
-import cn.edu.stu.chat.presenter.api.HttpApi;
-import cn.edu.stu.chat.utils.ToastHelper;
-import cn.edu.stu.chat.view.activity.MainActivity;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Observable;
-import rx.Scheduler;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 /**

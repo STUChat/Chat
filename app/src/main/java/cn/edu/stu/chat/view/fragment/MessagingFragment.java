@@ -8,11 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.view.api.BaseFragment;
 
 /**
  * Created by cheng on 16-8-22.
  */
-public class MessagingFragment extends Fragment {
+public class MessagingFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub

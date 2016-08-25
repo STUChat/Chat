@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:drawableLeft="@mipmap/search_icon"
+                android:drawablePadding="@dimen/border_magin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_edittext_shape"
+                android:textSize="16sp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="输入好友关键字"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/middle_border_magin"
+                android:src="@drawable/iv_delete_bg"
+                android:id="@+id/search_iv_delete"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/search_listview"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginBottom="@dimen/border_magin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

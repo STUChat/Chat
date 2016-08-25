@@ -8,16 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.view.api.BaseFragment;
 
 /**
  * Created by cheng on 16-8-22.
  */
-public class MineFragment extends Fragment {
+public class MineFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
