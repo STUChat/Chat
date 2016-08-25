@@ -1,5 +1,7 @@
 package cn.edu.stu.chat.presenter.api;
 
+
+
 import java.util.Map;
 
 import cn.edu.stu.chat.model.ChatResponse;
@@ -13,6 +15,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
 import rx.Observable;
+
 
 /**
  * Created by Terence on 2016/8/24.
