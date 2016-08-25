@@ -8,13 +8,16 @@ import java.util.List;
 import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.model.UserInfo;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 
 import cn.edu.stu.chat.utils.JsonHelper;
+import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
 import cn.edu.stu.chat.view.api.MvpView;
+import rx.Subscriber;
 
 /**
  * Created by dell on 2016/8/23.
@@ -46,21 +49,33 @@ public class LoginPresenter implements ILoginPresenter {
      * @param pwd
      */
     public void login(String nick,String pwd){
-        HashMap<String, String> map = new HashMap<>();
-        map.put("nick",nick);
-        map.put("pwd",pwd);
-        ChatResponse response = HttpMethods.getInstance()
-                .baseUrl(Constant.HOST)
-                .get(Constant.LOGIN2,null);
-        if(response != null) {
-            Log.e("lawliex", response.getResponseCode());
-            List<UserInfo> list = JsonHelper.getResponseList(response,UserInfo.class);
-            for (UserInfo user:list){
-                Log.e(TAG, "login: "+user.toString() );
+        loginView.showLanding();
+        HttpMethods.getInstance().baseUrl(Constant.HOST).subscribe(new Subscriber<ChatResponse>() {
+            @Override
+            public void onCompleted() {
+                loginView.hideLanding();
             }
-        }else
-            Log.e("lawliex","null");
-        loginView.jumpToActivity(MainActivity.class);
+            @Override
+            public void onError(Throwable e) {
+                loginView.hideLanding();
+                loginView.showErrorMessage(e.getMessage());
+            }
+            @Override
+            public void onNext(ChatResponse chatResponse) {
+                loginView.hideLanding();
+                if(chatResponse!=null){
+                    if(chatResponse.getResponseData()==null){
+                        loginView.showErrorMessage(chatResponse.getResponseMsg());
+                    }else{
+                        UserInfo user = JsonHelper.getResponseValue(chatResponse,UserInfo.class);
+                        Log.e(TAG, "user:"+user.toString());
+                        loginView.jumpToActivity(MainActivity.class);
+                    }
+                }else{
+                    loginView.showErrorMessage("不明错误");
+                }
+            }
+        }).get(Constant.LOGIN, null);
     }
 
     public void clickEye(){

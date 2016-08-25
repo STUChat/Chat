@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 
@@ -76,7 +77,7 @@ public class SearchFriendActivity extends BaseActivity {
      * @param text
      */
     private void startSearching(String text){
-        ToastHelper.showToast(SearchFriendActivity.this,text);
+        ToastHelper.showDialog(this, Constant.SearchFriendTitle,text);
         //隐藏软键盘
         InputMethodManager imm = (InputMethodManager) SearchFriendActivity.this.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);

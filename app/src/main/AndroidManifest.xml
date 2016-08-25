@@ -37,6 +37,7 @@
         <activity android:name=".view.activity.LoginActivity"></activity>
         <activity android:name=".view.activity.ForgotActivity"></activity>
         <activity android:name=".view.activity.SearchFriendActivity"></activity>
+        <activity android:name=".view.activity.UserInfoActivity"></activity>
         <activity android:name=".view.api.BaseActivity"></activity>
     </application>
 
