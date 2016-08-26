@@ -3,6 +3,7 @@ package cn.edu.stu.chat.view.api;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 import cn.edu.stu.chat.R;
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends AppCompatActivity {
 
     protected View toolbar;
     @Override
@@ -63,7 +64,6 @@ public class BaseActivity extends Activity {
             throw new NullPointerException("toolbar为空，先使用setToolabr");
         }
     }
-
 
     /**
      * 隐藏标题

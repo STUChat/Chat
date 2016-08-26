@@ -18,6 +18,7 @@ import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.presenter.LoginPresenter;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
+import cn.edu.stu.chat.utils.ResidentNotificationHelper;
 import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
@@ -64,9 +65,12 @@ public class LoginActivity extends BaseActivity implements ILoginView{
         ToastHelper.showErrorDialog(this,Constant.LoginTitle,text);
     }
 
+    /**
+     * 测试使用
+     */
     @Override
     public void showLanding(){
-
+        ResidentNotificationHelper.sendResidentNoticeType0(this, "贤生", "[困]今天又摔了个狗吃屎", R.mipmap.logo);
     }
 
     @Override
