@@ -10,6 +10,5 @@ import cn.edu.stu.chat.model.User;
 public interface IWelcomePresenter extends IPresenter{
 
     public boolean isSavePassword();
-    public boolean login();
-    public void setUser(User user);
+    public void login();
 }

@@ -4,6 +4,7 @@ import android.util.Log;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.model.ChatResponse;
@@ -40,15 +41,23 @@ public class LoginPresenter implements ILoginPresenter {
     public void init(){
         loginView.setTitle(Constant.LoginTitle);
         isCloingEye = true;
-
     }
 
     /**
-     * 登陆---目前测试--直接跳转主页
-     * @param nick
-     * @param pwd
+     * 登陆
+     * @param username
+     * @param password
      */
-    public void login(String nick,String pwd){
+    public void login(final String username,final String password){
+        if(username==null || password==null ||username.equals("")||password.equals("")) {
+            loginView.showErrorMessage("昵称或密码不能为空");
+            return;
+        }
+        Map<String,String> map = new HashMap<>();
+        map.put("email",username);
+        map.put("password",password);
+        //******* 测试 ********/
+        loginView.saveUsernamePwd(username,password);
         HttpMethods.getInstance().baseUrl(Constant.HOST).subscribe(new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {
@@ -56,8 +65,10 @@ public class LoginPresenter implements ILoginPresenter {
             }
             @Override
             public void onError(Throwable e) {
-
-                loginView.showErrorMessage(e.getMessage());
+                if(!loginView.isNetworkAvailable())
+                    loginView.showErrorMessage("网络不可用");
+                else
+                    loginView.showErrorMessage(e.getMessage());
             }
             @Override
             public void onNext(ChatResponse chatResponse) {
@@ -65,16 +76,20 @@ public class LoginPresenter implements ILoginPresenter {
                     if(chatResponse.getResponseData()==null){
                         loginView.showErrorMessage(chatResponse.getResponseMsg());
                     }else{
-                        UserInfo user = JsonHelper.getResponseValue(chatResponse,UserInfo.class);
-                        Log.e(TAG, "user:"+user.toString());
-                        loginView.showLanding();
-                        loginView.jumpToActivity(MainActivity.class);
+                        User user = JsonHelper.getResponseValue(chatResponse,User.class);
+                        loginView.setUser(user);
+                        if(loginView.isLogin()) {
+                            loginView.saveUsernamePwd(username,password);
+                            loginView.jumpToActivity(MainActivity.class);
+                        }else {
+                            loginView.showErrorMessage(chatResponse.getResponseMsg());
+                        }
                     }
                 }else{
-                    loginView.showErrorMessage("不明错误");
+                    loginView.showErrorMessage("登陆错误");
                 }
             }
-        }).get(Constant.LOGIN, null);
+        }).get(Constant.LOGIN, map);
     }
 
     public void clickEye(){

@@ -14,11 +14,15 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.http.NetworkHelper;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.LoginPresenter;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 import cn.edu.stu.chat.utils.ResidentNotificationHelper;
+import cn.edu.stu.chat.utils.SharedPreferencesHelper;
 import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
@@ -48,6 +52,12 @@ public class LoginActivity extends BaseActivity implements ILoginView{
 
     private void initView() {
         setToolbar(R.id.toolbar);
+        String username = (String) SharedPreferencesHelper.getParam(this,"username","");
+        String password = (String) SharedPreferencesHelper.getParam(this,"password","");
+        if(!username.equals("") && !password.equals("")) {
+            ((EditText)findViewById(R.id.login_nick_edit)).setText(username);
+            ((EditText)findViewById(R.id.login_pwd_edit)).setText(password);
+        }
     }
 
     @Override
@@ -56,26 +66,14 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     }
 
     @Override
-    public void showMessage(String text) {
-        ToastHelper.showDialog(this,Constant.LoginTitle,text);
+    public void saveUsernamePwd(String username,String password) {
+        SharedPreferencesHelper.setParam(this,"username",username);
+        SharedPreferencesHelper.setParam(this,"password",password);
     }
 
     @Override
     public void showErrorMessage(String text){
         ToastHelper.showErrorDialog(this,Constant.LoginTitle,text);
-    }
-
-    /**
-     * 测试使用
-     */
-    @Override
-    public void showLanding(){
-        ResidentNotificationHelper.sendResidentNoticeType0(this, "贤生", "[困]今天又摔了个狗吃屎", R.mipmap.logo);
-    }
-
-    @Override
-    public void hideLanding(){
-
     }
 
     @Override
@@ -90,6 +88,21 @@ public class LoginActivity extends BaseActivity implements ILoginView{
         eyeView.setImageResource(R.mipmap.landing_close_eye_image);
         pwdEdit.setTransformationMethod(PasswordTransformationMethod.getInstance());
         pwdEdit.postInvalidate();
+    }
+
+    @Override
+    public void setUser(User user) {
+        ((ChatApp)getApplication()).setUser(user);
+    }
+
+    @Override
+    public boolean isLogin(){
+        return super.isLogin();
+    }
+
+    @Override
+    public boolean isNetworkAvailable() {
+        return NetworkHelper.isNetworkAvailable(this);
     }
 
     @Override

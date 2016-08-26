@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 
 public class BaseActivity extends AppCompatActivity {
@@ -108,5 +109,14 @@ public class BaseActivity extends AppCompatActivity {
      * @param item
      */
     protected void MenuItemClick(MenuItem item) {
+    }
+
+    /**
+     * 判断用户是否登陆
+     * 判读Application的user是否为空
+     * @return
+     */
+    public boolean isLogin(){
+        return ((ChatApp)getApplication()).isLogin();
     }
 }

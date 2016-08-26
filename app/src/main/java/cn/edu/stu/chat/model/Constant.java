@@ -13,7 +13,6 @@ public class Constant {
      *登录接口
      */
     public final static String LOGIN = "Test2.aspx";
-    public final static String LOGIN2 = "Test.aspx";
     /**
      *shareperference文件名
      */
@@ -38,4 +37,5 @@ public class Constant {
      *添加好友的标题
      */
     public final static String SearchFriendTitle = "添加好友";
+
 }
