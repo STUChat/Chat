@@ -45,4 +45,7 @@
 
     <dimen name="message_input_bar_img_height">40dp</dimen>
     <dimen name="message_photo_size">30dp</dimen>
+    <dimen name="message_font_size">16dp</dimen>
+    <dimen name="message_line_spacing">3dp</dimen>
+    <dimen name="message_item_spacing">20dp</dimen>
 </resources>
