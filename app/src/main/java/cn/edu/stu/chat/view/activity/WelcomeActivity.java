@@ -3,6 +3,9 @@ package cn.edu.stu.chat.view.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import cn.edu.stu.chat.ChatApp;
@@ -23,25 +26,25 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //没有标题
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //设置全屏
+        getWindow().
+                setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏显示
         setContentView(R.layout.activity_welcome);
         button = (Button)findViewById(R.id.welcome_button);
         app = (ChatApp) getApplicationContext();
         presenter = new WelcomePresenter();
         presenter.attach(this);
 
-        new Thread(new Runnable() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                try{
-                    Thread.sleep(Constant.WELCOME_JUMP_TIME);
-                    presenter.login();
-                }catch (Exception e){
-                    ToastHelper.showToast(WelcomeActivity.this, "error");
-                }finally {
-                    WelcomeActivity.this.finish();
-                }
+                presenter.login();
             }
-        }).start();
+        },Constant.WELCOME_JUMP_TIME);
+
     }
 
 
@@ -61,6 +64,7 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
     public void jumpToActivity(Class<? extends Activity> activityClass) {
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
+        finish();
     }
 
     @Override

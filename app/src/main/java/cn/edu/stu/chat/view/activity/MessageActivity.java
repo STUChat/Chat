@@ -13,8 +13,9 @@ import butterknife.BindView;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.adapter.MessageDetailAdapter;
 import cn.edu.stu.chat.model.MessageDetailModel;
+import cn.edu.stu.chat.view.api.BaseActivity;
 
-public class MessageActivity extends AppCompatActivity {
+public class MessageActivity extends BaseActivity {
     private ListView listView;
     private List<MessageDetailModel> datas;
     MessageDetailAdapter messageDetailAdapter;

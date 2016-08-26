@@ -11,26 +11,20 @@ import cn.edu.stu.chat.model.User;
  * Application类，便于处理一些需要在整个app生命周期处理的事情
  */
 public class ChatApp extends Application {
-    public User user;
+    private User user;
     @Override
     public void onCreate() {
         super.onCreate();
     }
 
     /**
-     * 用户是否登陆
-     * @return
-     */
-    public boolean isLogin(){
-        if(user!=null&&!user.getToken().equals("")) {
-            return true;
-        }
-        return false;
-    }
-    /**
      * 设置用户
      */
     public void setUser(User user){
         this.user = user;
+    }
+
+    public User getUser(){
+        return user;
     }
 }

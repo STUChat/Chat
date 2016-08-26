@@ -61,4 +61,35 @@
             android:layout_margin="@dimen/border_magin"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/mine_border_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_feedback"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_font_size"
+            android:layout_margin="@dimen/border_magin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/mine_border_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_font_size"
+            android:layout_margin="@dimen/border_magin"/>
+    </LinearLayout>
 </LinearLayout>

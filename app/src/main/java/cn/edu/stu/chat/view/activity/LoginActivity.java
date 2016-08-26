@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -73,6 +74,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
 
     @Override
     public void showErrorMessage(String text){
+        findViewById(R.id.login_landing_btn).setClickable(true);
         ToastHelper.showErrorDialog(this,Constant.LoginTitle,text);
     }
 
@@ -129,6 +131,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     void login(){
         String nick = nickEdit.getText().toString();
         String pwd = pwdEdit.getText().toString();
+        findViewById(R.id.login_landing_btn).setClickable(false);
         presenter.login(nick,pwd);
     }
     @OnClick(R.id.login_eye)

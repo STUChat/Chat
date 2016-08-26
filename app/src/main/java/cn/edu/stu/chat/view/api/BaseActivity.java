@@ -16,12 +16,6 @@ import cn.edu.stu.chat.R;
 public class BaseActivity extends AppCompatActivity {
 
     protected View toolbar;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
-    }
-
     /**
      * 设置toolbar
      * @param res_id
@@ -117,6 +111,19 @@ public class BaseActivity extends AppCompatActivity {
      * @return
      */
     public boolean isLogin(){
-        return ((ChatApp)getApplication()).isLogin();
+        ChatApp app = (ChatApp)getApplication();
+            if(app.getUser()!=null&& app.getUser().getToken()!=null&&!app.getUser().getToken().equals("")) {
+                return true;
+            }
+            return false;
+    }
+
+    /**
+     * 注销
+     * @return
+     */
+    public void logout(){
+        ChatApp app = (ChatApp)getApplication();
+        app.setUser(null);
     }
 }

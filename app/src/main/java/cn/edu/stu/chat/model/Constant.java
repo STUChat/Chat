@@ -12,7 +12,7 @@ public class Constant {
     /**
      *登录接口
      */
-    public final static String LOGIN = "Test2.aspx";
+    public final static String LOGIN = "login.aspx";
     /**
      *shareperference文件名
      */

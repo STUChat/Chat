@@ -10,11 +10,9 @@ import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.User;
-import cn.edu.stu.chat.model.UserInfo;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 
 import cn.edu.stu.chat.utils.JsonHelper;
-import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.api.ILoginView;
 import cn.edu.stu.chat.view.api.MvpView;
@@ -56,8 +54,7 @@ public class LoginPresenter implements ILoginPresenter {
         Map<String,String> map = new HashMap<>();
         map.put("email",username);
         map.put("password",password);
-        //******* 测试 ********/
-        loginView.saveUsernamePwd(username,password);
+
         HttpMethods.getInstance().baseUrl(Constant.HOST).subscribe(new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {
@@ -72,24 +69,27 @@ public class LoginPresenter implements ILoginPresenter {
             }
             @Override
             public void onNext(ChatResponse chatResponse) {
-                if(chatResponse!=null){
-                    if(chatResponse.getResponseData()==null){
-                        loginView.showErrorMessage(chatResponse.getResponseMsg());
-                    }else{
-                        User user = JsonHelper.getResponseValue(chatResponse,User.class);
-                        loginView.setUser(user);
-                        if(loginView.isLogin()) {
-                            loginView.saveUsernamePwd(username,password);
-                            loginView.jumpToActivity(MainActivity.class);
-                        }else {
-                            loginView.showErrorMessage(chatResponse.getResponseMsg());
-                        }
+                if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
+                    //登陆成功
+                    User user = JsonHelper.getResponseValue(chatResponse, User.class);
+                    if (user != null) {
+                        user.setLoginTime(System.currentTimeMillis());
+                        user.setToken(chatResponse.getResponseToken());
+                        loginView.setUser(user);//保存用户
                     }
-                }else{
-                    loginView.showErrorMessage("登陆错误");
+                    if (loginView.isLogin()) {
+                        loginView.saveUsernamePwd(username, password);
+                        loginView.jumpToActivity(MainActivity.class);
+                        Log.e(TAG, user.toString() );
+                        return;
+                    }
                 }
+                if(chatResponse.getResponseMsg()!=null&&!chatResponse.getResponseMsg().equals(""))
+                    loginView.showErrorMessage(chatResponse.getResponseMsg());
+                else
+                    loginView.showErrorMessage("未知错误");
             }
-        }).get(Constant.LOGIN, map);
+        }).post(Constant.LOGIN, map);
     }
 
     public void clickEye(){

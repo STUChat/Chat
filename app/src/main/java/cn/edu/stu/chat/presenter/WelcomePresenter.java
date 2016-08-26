@@ -1,5 +1,7 @@
 package cn.edu.stu.chat.presenter;
 
+import android.util.Log;
+
 import java.util.HashMap;
 import java.util.Map;
 import cn.edu.stu.chat.http.HttpMethods;
@@ -18,6 +20,7 @@ import rx.Subscriber;
  * Created by Terence on 2016/8/22.
  */
 public class WelcomePresenter implements IWelcomePresenter {
+    public static String TAG ="welcomePresenter";
     private IWelcomeView welcomeView;
     private String username;
     private String password;
@@ -49,21 +52,26 @@ public class WelcomePresenter implements IWelcomePresenter {
                 @Override
                 public void onError(Throwable e) {
                     welcomeView.jumpToActivity(LoginActivity.class);
+                    Log.e(TAG, "onError: "+e.getMessage() );
                 }
                 @Override
                 public void onNext(ChatResponse chatResponse) {
                     if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
                         //登陆成功
                         User user = JsonHelper.getResponseValue(chatResponse, User.class);
-                        welcomeView.setUser(user);
-                        //保存用户
-                        if (welcomeView.isLogin())
+                        if (user != null) {
+                            user.setLoginTime(System.currentTimeMillis());
+                            user.setToken(chatResponse.getResponseToken());
+                            welcomeView.setUser(user);//保存用户
+                            Log.e(TAG, user.toString());
+                        }
+                        if (welcomeView.isLogin()) {
                             welcomeView.jumpToActivity(MainActivity.class);
-                        else
-                            welcomeView.jumpToActivity(LoginActivity.class);
-                    } else {
-                        welcomeView.jumpToActivity(LoginActivity.class);
+                            Log.e(TAG, user.toString());
+                            return;
+                        }
                     }
+                    welcomeView.jumpToActivity(LoginActivity.class);
                 }
             }).post(Constant.LOGIN,map);
         }

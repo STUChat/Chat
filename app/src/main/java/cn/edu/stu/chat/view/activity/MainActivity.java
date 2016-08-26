@@ -11,11 +11,12 @@ import android.widget.LinearLayout;
 
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.utils.ResidentNotificationHelper;
+import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.fragment.ContactFragment;
 import cn.edu.stu.chat.view.fragment.MessagingFragment;
 import cn.edu.stu.chat.view.fragment.MineFragment;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     private LinearLayout messagingLayout, contactLayout, mineLayout;
     private Fragment fragment;

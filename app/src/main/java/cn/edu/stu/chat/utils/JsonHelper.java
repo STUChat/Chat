@@ -4,8 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +24,7 @@ public class JsonHelper {
      */
     public static <T> T getResponseValue(ChatResponse response, Class<T> cls) {
         if(response.getResponseData()!=null)
-            return getValue(response.getResponseData().toString(),cls);
+            return getValue(response.getResponseData(),cls);
         return null;
     }
 
@@ -80,12 +78,17 @@ public class JsonHelper {
         return list;
     }
 
-    public static <T> T getValue(String str, Class<T> cls) {
+    public static <T> T getValue(Object str, Class<T> cls) {
         T t = null;
+        String s = null;
         if(str!=null) {
             try {
                 Gson gson = new Gson();
-                t = gson.fromJson(str, cls);
+                if(s instanceof String)
+                    s = (String)str;
+                else
+                    s = gson.toJson(str);
+                t = gson.fromJson(s, cls);
             } catch (Exception e) {
                 // TODO: handle exception
             }

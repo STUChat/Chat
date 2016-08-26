@@ -1,39 +1,33 @@
 package cn.edu.stu.chat.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Terence on 2016/8/22.
  */
-public class User {
-    String photoUrl;//用户头像url
-    String nickName;//用户昵称
+public class User{
+    String headUrl;//用户头像url
+    String name;//用户昵称
     String gender;//用户性别
     String motto;//个性签名
-    String token;//令牌
     String email;//账户email
+    String token;//令牌
     long loginTime;
 
-    public long getLoginTime() {
-        return loginTime;
+    public String getHeadUrl() {
+        return headUrl;
     }
 
-    public void setLoginTime(long loginTime) {
-        this.loginTime = loginTime;
+    public void setHeadUrl(String headUrl) {
+        this.headUrl = headUrl;
     }
 
-    public String getPhotoUrl() {
-        return photoUrl;
+    public String getName() {
+        return name;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
-    }
-
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getGender() {
@@ -52,14 +46,6 @@ public class User {
         this.motto = motto;
     }
 
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -68,4 +54,27 @@ public class User {
         this.email = email;
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public long getLoginTime() {
+        return loginTime;
+    }
+
+    public void setLoginTime(long loginTime) {
+        this.loginTime = loginTime;
+    }
+
+    public String toString(){
+        return "name:"+name+"\n"+
+                "gender:"+gender+"\n"+
+                "email:"+email+"\n"+
+                "token:"+token+"\n"+
+                "motto:"+motto;
+    }
 }
