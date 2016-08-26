@@ -2,43 +2,56 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <ImageView
-        android:id="@+id/photo"
+    android:layout_height="match_parent">
+    <RelativeLayout
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_margin="@dimen/border_magin"
-        android:background="@mipmap/default_photo"
-        />
+        android:layout_margin="@dimen/border_magin">
+        <ImageView
+            android:id="@+id/message_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/default_photo" />
+        <FrameLayout
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/message_message_number_item_bg">
+            <TextView
+                android:id="@+id/message_not_read_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/message_not_read_font_size"
+                android:textColor="@color/white"
+                android:text="1"/>
+        </FrameLayout>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/border_magin"
-        >
+        android:layout_marginRight="@dimen/border_magin">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/border_magin"
-            >
+            android:layout_marginTop="@dimen/border_magin">
             <TextView
                 android:id="@+id/nickText"
                 android:text="Terence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
             <TextView
                 android:id="@+id/timeText"
                 android:text="12:01"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
         </LinearLayout>
-
         <TextView
             android:id="@+id/msgText"
             android:text="世界这么大，我想去看看！！！！"
@@ -47,7 +60,5 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/border_magin"
             />
-
     </LinearLayout>
-
 </LinearLayout>

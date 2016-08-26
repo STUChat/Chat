@@ -23,7 +23,6 @@
             android:layout_gravity="left"
             />
         <TextView
-
             android:id="@+id/msgText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +30,6 @@
             android:maxEms="10"
             android:textSize="@dimen/message_font_size"
             android:lineSpacingExtra="@dimen/message_line_spacing"
-            android:letterSpacing="12"
             android:padding="@dimen/border_magin"
             android:background="@drawable/message_item_bg_left"
             android:layout_gravity="center"

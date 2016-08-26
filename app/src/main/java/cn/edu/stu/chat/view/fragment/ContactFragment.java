@@ -16,7 +16,7 @@ import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.presenter.ContactPresenter;
 import cn.edu.stu.chat.presenter.api.IContactPresenter;
 import cn.edu.stu.chat.view.activity.SearchFriendActivity;
-import cn.edu.stu.chat.view.adapter.ContactAdapter;
+import cn.edu.stu.chat.adapter.ContactAdapter;
 import cn.edu.stu.chat.view.api.BaseFragment;
 import cn.edu.stu.chat.view.api.IContactView;
 

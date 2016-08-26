@@ -1,5 +1,6 @@
 package cn.edu.stu.chat.view.activity;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.utils.ResidentNotificationHelper;
 import cn.edu.stu.chat.view.fragment.ContactFragment;
 import cn.edu.stu.chat.view.fragment.MessagingFragment;
 import cn.edu.stu.chat.view.fragment.MineFragment;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initFragment(savedInstanceState);
         initView();
+        notificationChange(getIntent());
     }
 
     private void initFragment(Bundle savedInstanceState)
@@ -37,6 +40,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fragment = new MessagingFragment();
             }
             ft.replace(R.id.tab_fragment,fragment).commit();
+        }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        notificationChange(intent);
+    }
+
+    /**
+     * 点击通知栏后清除通知
+     * @param intent
+     */
+    private void notificationChange(Intent intent) {
+        int noticeId = intent.getIntExtra(ResidentNotificationHelper.NOTICE_ID_KEY, -1);
+        if(noticeId != -1){
+            ResidentNotificationHelper.clearNotification(MainActivity.this, noticeId);
         }
     }
 

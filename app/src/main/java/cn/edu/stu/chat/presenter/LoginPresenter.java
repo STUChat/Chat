@@ -49,26 +49,25 @@ public class LoginPresenter implements ILoginPresenter {
      * @param pwd
      */
     public void login(String nick,String pwd){
-        loginView.showLanding();
         HttpMethods.getInstance().baseUrl(Constant.HOST).subscribe(new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {
-                loginView.hideLanding();
+
             }
             @Override
             public void onError(Throwable e) {
-                loginView.hideLanding();
+
                 loginView.showErrorMessage(e.getMessage());
             }
             @Override
             public void onNext(ChatResponse chatResponse) {
-                loginView.hideLanding();
                 if(chatResponse!=null){
                     if(chatResponse.getResponseData()==null){
                         loginView.showErrorMessage(chatResponse.getResponseMsg());
                     }else{
                         UserInfo user = JsonHelper.getResponseValue(chatResponse,UserInfo.class);
                         Log.e(TAG, "user:"+user.toString());
+                        loginView.showLanding();
                         loginView.jumpToActivity(MainActivity.class);
                     }
                 }else{

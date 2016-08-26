@@ -1,4 +1,4 @@
-package cn.edu.stu.chat.view.adapter;
+package cn.edu.stu.chat.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
