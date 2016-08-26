@@ -18,39 +18,34 @@ import cn.edu.stu.chat.model.MessageDetailModel;
 /**
  * Created by Terence on 2016/8/25.
  */
-public class MessageDetailAdapter extends BaseAdapter {
-    private List<MessageDetailModel> datas;
-    private Context context;
-    private LayoutInflater inflater;
+public class MessageDetailAdapter extends CommonAdapter<MessageDetailModel> {
+
     public MessageDetailAdapter(Context context, List<MessageDetailModel> datas){
-        this.datas  = datas;
-        this.context = context;
-        inflater = LayoutInflater.from(context);
+        super(context,datas);
     }
-    @Override
-    public int getCount() {
-        return datas.size();
-    }
-    @Override
-    public MessageDetailModel getItem(int i) {
-        return datas.get(i);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return i;
-    }
-
     @Override
     public View getView(int i, View view, ViewGroup viewGroup){
         ViewHolder viewHolder;
-        if(view == null){
+        boolean isMine = false;
+
+        if(view != null && ((ViewHolder)view.getTag()).isMine)
+            isMine = true;
+        if(view == null && i % 2 == 0 || view != null && isMine && i % 2  == 0){
             view = (View)inflater.inflate(R.layout.message_detail_item, viewGroup, false);
             viewHolder = new ViewHolder();
             viewHolder.msg = (TextView)view.findViewById(R.id.msgText);
             viewHolder.photo = (ImageView)view.findViewById(R.id.photo);
+            viewHolder.isMine = false;
             view.setTag(viewHolder);
-        }else{
+        }else if(view == null && i % 2 == 1|| view !=null && isMine == false && i % 2  == 1){
+            view = (View)inflater.inflate(R.layout.message_detail_item_mine, viewGroup, false);
+            viewHolder = new ViewHolder();
+            viewHolder.msg = (TextView)view.findViewById(R.id.my_msgText);
+            viewHolder.photo = (ImageView)view.findViewById(R.id.my_photo);
+            viewHolder.isMine = true;
+            view.setTag(viewHolder);
+        }
+        else{
             viewHolder = (ViewHolder) view.getTag();
         }
         viewHolder.msg.setText(datas.get(i).getMsg()+"");
@@ -59,5 +54,6 @@ public class MessageDetailAdapter extends BaseAdapter {
     final class ViewHolder{
         ImageView photo;
         TextView msg;
+        boolean isMine;
     }
 }

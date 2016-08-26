@@ -8,39 +8,39 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/message_item_spacing" />
     <LinearLayout
-
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+
+        android:gravity="right"
+        android:layout_gravity="right"
         >
-
-        <ImageView
-            android:id="@+id/photo"
-            android:layout_width="@dimen/message_photo_size"
-            android:layout_height="@dimen/message_photo_size"
-            android:layout_margin="@dimen/border_magin"
-            android:background="@mipmap/default_photo"
-            android:layout_gravity="left"
-            />
-        <TextView
-
-            android:id="@+id/msgText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:maxEms="10"
-            android:textSize="@dimen/message_font_size"
-            android:lineSpacingExtra="@dimen/message_line_spacing"
-            android:letterSpacing="12"
-            android:padding="@dimen/border_magin"
-            android:background="@drawable/message_item_bg_left"
-            android:layout_gravity="center"
-            android:text="世界那么大，我想去看看"
-            />
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/my_msgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxEms="10"
+            android:lineSpacingExtra="3dp"
+            android:textSize="@dimen/message_font_size"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/border_magin"
+            android:background="@drawable/message_item_bg"
+            android:layout_gravity="center"
+            android:text="停止你愚蠢的行为！！"
+            />
+        <ImageView
+            android:id="@+id/my_photo"
+            android:layout_width="@dimen/message_photo_size"
+            android:layout_height="@dimen/message_photo_size"
+            android:layout_margin="@dimen/border_magin"
+            android:background="@mipmap/default_photo"
+            android:layout_gravity="right"
             />
     </LinearLayout>
 

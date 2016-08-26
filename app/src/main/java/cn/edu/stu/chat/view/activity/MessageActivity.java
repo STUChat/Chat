@@ -23,7 +23,7 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.message);
         MessageDetailModel data = new MessageDetailModel();
-        data.setMsg("傻孩子你怎么会是傻孩子!!!");
+        data.setMsg("傻孩子你怎么会是傻孩子!!!明天要去哪里，我也不知道");
         data.setName("Terence");
         data.setUserId("lawliex");
         datas = new ArrayList<>();
@@ -33,5 +33,7 @@ public class MessageActivity extends AppCompatActivity {
         listView = (ListView)findViewById(R.id.message);
         listView.setAdapter(messageDetailAdapter);
         listView.setSelection(datas.size() - 1);
+        listView.setDivider(null);
+
     }
 }

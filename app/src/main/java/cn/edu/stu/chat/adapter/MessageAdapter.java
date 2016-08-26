@@ -15,30 +15,10 @@ import cn.edu.stu.chat.model.MessageModel;
 /**
  * Created by Terence on 2016/8/25.
  */
-public class MessageAdapter extends BaseAdapter {
-    private List<MessageModel> datas;
-    private Context context;
-    private LayoutInflater inflater;
+public class MessageAdapter extends CommonAdapter<MessageModel> {
     public MessageAdapter(Context context, List<MessageModel> datas){
-        this.datas = datas;
-        this.context = context;
-        inflater = LayoutInflater.from(context);
+        super(context,datas);
     }
-    @Override
-    public int getCount() {
-        return datas.size();
-    }
-
-    @Override
-    public MessageModel getItem(int i) {
-        return datas.get(i);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return i;
-    }
-
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
        final ViewHolder viewHolder;
