@@ -4,8 +4,7 @@
     android:layout_height="match_parent">
     <include
         layout="@layout/main_toolbar"
-        android:id="@+id/main_toolbar"
-        />
+        android:id="@+id/main_toolbar" />
 
     <LinearLayout
         android:id="@+id/input_layout"
@@ -13,8 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/border_magin"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        >
+        android:layout_alignParentBottom="true">
 
         <ImageView
             android:layout_width="@dimen/message_input_bar_img_height"
@@ -43,6 +41,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/main_toolbar"
         android:layout_above="@id/input_layout"
-        >
+        android:listSelector="@android:color/transparent">
     </ListView>
 </RelativeLayout>
