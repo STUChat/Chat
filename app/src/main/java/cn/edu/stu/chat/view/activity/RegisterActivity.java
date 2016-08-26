@@ -36,9 +36,7 @@ public class RegisterActivity extends BaseActivity {
         HashMap<String,String> map = new HashMap<>();
         map.put("name","lawliex");
         map.put("password","xx123");
-        map.put("rpassword","xx123");
         map.put("gender","0");
-        map.put("headUrl","lawliex");
         map.put("email","570103680@qq.com");
 
         ChatResponse response= HttpMethods.getInstance().subscribe(new Subscriber<ChatResponse>(){
@@ -50,7 +48,7 @@ public class RegisterActivity extends BaseActivity {
 
             @Override
             public void onError(Throwable e) {
-                ToastHelper.showToast(RegisterActivity.this,"error");
+                ToastHelper.showToast(RegisterActivity.this,e.toString());
             }
 
             @Override
