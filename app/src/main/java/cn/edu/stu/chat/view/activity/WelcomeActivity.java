@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Process;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.aidl.service.MessageManagerService;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.WelcomePresenter;
@@ -22,6 +25,7 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
     private Button button;
     private ChatApp app;
     private WelcomePresenter presenter;
+    private static final String TAG = "welcomeActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +48,15 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
                 presenter.login();
             }
         },Constant.WELCOME_JUMP_TIME);
-
+        initService();
     }
 
+
+    private void initService() {
+        Log.e(TAG, Process.myPid() + "");
+        Intent intent = new Intent(this, MessageManagerService.class);
+        startService(intent);
+    }
 
     @Override
     public String getUsername() {
