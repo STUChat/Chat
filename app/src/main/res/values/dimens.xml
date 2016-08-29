@@ -32,8 +32,9 @@
     <!--我的-->
     <dimen name="mine_photo_size">60dp</dimen>
     <dimen name="mine_border_margin">20dp</dimen>
+    <dimen name="mine_gender_top_margin">36dp</dimen>
     <dimen name="mine_nickname_top_margin">40dp</dimen>
-    <dimen name="mine_nickname_left_margin">30dp</dimen>
+    <dimen name="mine_nickname_left_margin">15dp</dimen>
     <dimen name="mine_info_size">100dp</dimen>
     <dimen name="mine_item_size">35dp</dimen>
 

@@ -37,11 +37,10 @@
         <activity android:name=".view.activity.LoginActivity" />
         <activity android:name=".view.activity.ForgotActivity" />
         <activity android:name=".view.activity.SearchFriendActivity" />
+        <activity android:name=".view.activity.MessageActivity"/>
+        <activity android:name=".view.activity.UserInfoActivity"/>
+        <activity android:name=".view.activity.UpdateUserInfoActivity"/>
         <activity android:name=".view.api.BaseActivity" />
-        <activity android:name=".view.activity.MessageActivity"></activity>
-
-        <activity android:name=".view.activity.UserInfoActivity"></activity>
-
     </application>
 
 </manifest>

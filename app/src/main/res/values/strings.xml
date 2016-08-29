@@ -20,6 +20,11 @@
     <string name="forgot_new_pwd">新密码</string>
     <string name="forgot_confirm">确认</string>
 
+    <!--修改密码-->
+    <string name="change_pwd_old">旧密码</string>
+    <string name="change_pwd_new">新密码</string>
+    <string name="change_pwd_repeat">重复密码</string>
+
     <!--tab-->
     <string name="tab_messaging">消息</string>
     <string name="tab_contact">通信录</string>
@@ -32,6 +37,8 @@
     <string name="mine_setting">设置</string>
     <string name="mine_share">分享</string>
     <string name="mine_feedback">反馈</string>
+    <string name="mine_logout">注销</string>
+    <string name="mine_change_pwd">修改密码</string>
     <string name="mine_default_nickname">猜猜我是谁</string>
 
     <!--个人信息-->
@@ -39,4 +46,10 @@
     <string name="user_info_nickname">昵称</string>
     <string name="user_info_sex">性别</string>
     <string name="user_info_motto">个性签名</string>
+
+    <!--修改个人信息-->
+    <string name="change_user_info_confirm">确认修改</string>
+    <string name="change_user_info_change_name">修改昵称</string>
+    <string name="change_user_info_change_motto">修改签名</string>
+
 </resources>

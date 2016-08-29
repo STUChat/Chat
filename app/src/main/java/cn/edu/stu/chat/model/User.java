@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class User{
     String headUrl;//用户头像url
     String name;//用户昵称
-    String gender;//用户性别
+    String gender;//用户性别 0:保密 1.男 2.女
     String motto;//个性签名
     String email;//账户email
     String token;//令牌

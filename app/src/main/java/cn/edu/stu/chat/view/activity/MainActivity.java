@@ -94,7 +94,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 break;
         }
         ft.replace(R.id.tab_fragment, fragment).commit();
-
     }
 
     private void initFragmentState() {
