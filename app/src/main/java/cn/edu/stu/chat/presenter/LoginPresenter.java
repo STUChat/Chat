@@ -1,5 +1,6 @@
 package cn.edu.stu.chat.presenter;
 
+import android.net.Uri;
 import android.util.Log;
 
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import java.util.Map;
 import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.UriConstant;
 import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.api.ILoginPresenter;
 
@@ -55,7 +57,7 @@ public class LoginPresenter implements ILoginPresenter {
         map.put("email",username);
         map.put("password",password);
 
-        HttpMethods.getInstance().baseUrl(Constant.HOST).subscribe(new Subscriber<ChatResponse>() {
+        HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {
 
@@ -89,7 +91,7 @@ public class LoginPresenter implements ILoginPresenter {
                 else
                     loginView.showErrorMessage("未知错误");
             }
-        }).post(Constant.LOGIN, map);
+        }).post(UriConstant.LOGIN, map);
     }
 
     public void clickEye(){

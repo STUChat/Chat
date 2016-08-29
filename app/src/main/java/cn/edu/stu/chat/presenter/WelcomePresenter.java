@@ -7,6 +7,7 @@ import java.util.Map;
 import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.UriConstant;
 import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.api.IWelcomePresenter;
 import cn.edu.stu.chat.utils.JsonHelper;
@@ -45,7 +46,7 @@ public class WelcomePresenter implements IWelcomePresenter {
             Map<String,String> map = new HashMap<>();
             map.put("email",username);
             map.put("password",password);
-            HttpMethods.getInstance().baseUrl(Constant.HOST).subscribe(new Subscriber<ChatResponse>() {
+            HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
                 @Override
                 public void onCompleted() {
                 }
@@ -73,7 +74,7 @@ public class WelcomePresenter implements IWelcomePresenter {
                     }
                     welcomeView.jumpToActivity(LoginActivity.class);
                 }
-            }).post(Constant.LOGIN,map);
+            }).post(UriConstant.LOGIN,map);
         }
         else  //未保存密码
             welcomeView.jumpToActivity(LoginActivity.class);

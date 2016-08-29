@@ -17,6 +17,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/middle_font_size"/>
         <cn.edu.stu.chat.view.widget.CircleImageView
+            android:id="@+id/user_info_photo"
             android:layout_width="@dimen/user_info_photo_size"
             android:layout_height="@dimen/user_info_photo_size"
             android:layout_margin="@dimen/middle_border_magin"
@@ -32,6 +33,7 @@
         android:background="@color/ChatBackgroundColor"/>
 
     <RelativeLayout
+        android:id="@+id/user_info_name_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -44,12 +46,14 @@
             android:textColor="@color/black"
             android:textSize="@dimen/middle_font_size"/>
         <TextView
+            android:id="@+id/user_info_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/middle_border_magin"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_vertical"
             android:text="猜猜我是谁"
+            android:clickable="true"
             android:textColor="@color/gray"
             android:textSize="@dimen/default_font_size"/>
     </RelativeLayout>
@@ -61,6 +65,7 @@
         android:background="@color/ChatBackgroundColor"/>
 
     <RelativeLayout
+        android:id="@+id/user_info_gender_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -73,12 +78,14 @@
             android:textColor="@color/black"
             android:textSize="@dimen/middle_font_size"/>
         <TextView
+            android:id="@+id/user_info_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/middle_border_magin"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_vertical"
-            android:text="男"
+            android:text="保密"
+            android:clickable="true"
             android:textColor="@color/gray"
             android:textSize="@dimen/default_font_size"/>
     </RelativeLayout>
@@ -90,6 +97,7 @@
         android:background="@color/ChatBackgroundColor"/>
 
     <RelativeLayout
+        android:id="@+id/user_info_motto_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -100,8 +108,10 @@
             android:layout_gravity="center_vertical"
             android:text="@string/user_info_motto"
             android:textColor="@color/black"
-            android:textSize="@dimen/middle_font_size"/>
+            android:textSize="@dimen/middle_font_size"
+            android:clickable="true"/>
         <TextView
+            android:id="@+id/user_info_motto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/middle_border_magin"

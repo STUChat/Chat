@@ -4,6 +4,7 @@ import java.util.Map;
 
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.UriConstant;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -21,7 +22,7 @@ import rx.schedulers.Schedulers;
  * HttpMethods.getInstance().get(path, map);
  */
 public class HttpMethods {
-    private static String baseUrl = Constant.HOST;
+    private static String baseUrl = UriConstant.HOST;
     volatile private static HttpMethods instance = null;
     private Observable<ChatResponse> observable;
     private Subscriber subscriber;

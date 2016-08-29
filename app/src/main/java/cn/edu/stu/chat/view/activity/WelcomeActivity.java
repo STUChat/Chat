@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Process;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -22,6 +24,7 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
     private Button button;
     private ChatApp app;
     private WelcomePresenter presenter;
+    private static final String TAG = "welcomeActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +47,7 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
                 presenter.login();
             }
         },Constant.WELCOME_JUMP_TIME);
-
     }
-
 
     @Override
     public String getUsername() {

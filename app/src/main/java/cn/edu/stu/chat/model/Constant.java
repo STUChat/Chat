@@ -5,14 +5,7 @@ package cn.edu.stu.chat.model;
  * 常量类
  */
 public class Constant {
-    /**
-     *服务器地址
-     */
-    public final static String HOST = "http://119.29.82.22:8880";
-    /**
-     *登录接口
-     */
-    public final static String LOGIN = "login.aspx";
+
     /**
      *shareperference文件名
      */
@@ -24,7 +17,7 @@ public class Constant {
     /**
      * 欢迎页面跳转时间
      */
-    public final static long WELCOME_JUMP_TIME = 2000;
+    public final static long WELCOME_JUMP_TIME = 1000;
     /**
      *登陆Activity的标题
      */
@@ -37,5 +30,22 @@ public class Constant {
      *添加好友的标题
      */
     public final static String SearchFriendTitle = "添加好友";
+    /**
+     * 修改昵称的标题
+     */
+    public final static String ChangeUserInfoNameTitle = "修改昵称";
+    /**
+     * 修改个性签名的标题
+     */
+    public final static String ChangeUserInfoMottoTitle = "修改个性签名";
+    /**
+     * 用户个人资料的标题
+     */
+    public final static String UserInfoTitle = "个人资料";
+    /**
+     * 修改密码的标题
+     */
+    public final static String ChangePwdTitle = "修改密码";
+
 
 }
