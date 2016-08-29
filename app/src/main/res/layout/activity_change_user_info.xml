@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/main_toolbar"
+        layout="@layout/main_toolbar"/>
+    <EditText
+        android:id="@+id/change_user_info_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginTop="@dimen/border_magin"
+        android:layout_marginBottom="@dimen/border_magin"
+        android:textSize="@dimen/middle_font_size"
+        android:textColor="@color/black"
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/change_user_info_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_marginLeft="@dimen/border_magin"
+        android:layout_marginTop="@dimen/border_magin"
+        android:text="@string/change_user_info_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_font_size"
+        android:background="@drawable/corner_button"/>
+</LinearLayout>
