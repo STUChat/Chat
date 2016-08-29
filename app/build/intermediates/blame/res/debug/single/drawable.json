@@ -1,266 +1,222 @@
 [
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\welcome_bg.jpg",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\welcome_bg.jpg"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\error_circle.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\error_circle.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\success_circle.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\success_circle.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_button_background.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\gray_button_background.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_selector_mine.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\tab_selector_mine.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\welcome_button.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\welcome_button.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\message_item_bg.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\message_item_bg.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\error_center_x.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\error_center_x.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_selector_messaging.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\tab_selector_messaging.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_background.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\dialog_background.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\warning_sigh.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\warning_sigh.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\iv_delete_bg.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\iv_delete_bg.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\warning_circle.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\warning_circle.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\corner_button.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\corner_button.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\message_item_bg_left.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\message_item_bg_left.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_selector_color.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\tab_selector_color.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_button_background.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\red_button_background.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\success_bow.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\success_bow.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\message_message_number_item_bg.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\message_message_number_item_bg.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_button_background.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\drawable\\blue_button_background.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search_edittext_shape.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\search_edittext_shape.xml"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_selector_contact.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\drawable\\tab_selector_contact.xml"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
     }
 ]

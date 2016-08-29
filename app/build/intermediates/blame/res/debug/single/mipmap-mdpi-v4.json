@@ -1,10 +1,14 @@
 [
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_more_vert_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-mdpi\\ic_more_vert_normal.png"
     },
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_keyboard_backspace_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-mdpi\\ic_keyboard_backspace_normal.png"
     }
 ]

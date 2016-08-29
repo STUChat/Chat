@@ -1,10 +1,42 @@
 [
     {
-        "merged": "D:\\lawliex\\Android\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
-        "source": "D:\\lawliex\\Android\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\contact_press.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\contact_press.png"
     },
     {
-        "merged": "D:\\lawliex\\Chat\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
-        "source": "D:\\lawliex\\Chat\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\contact_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\contact_normal.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\mine_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\mine_normal.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\messaging_press.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\messaging_press.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\logo.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_more_vert_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_more_vert_normal.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\message_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\message_normal.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_keyboard_backspace_normal.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_keyboard_backspace_normal.png"
+    },
+    {
+        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\mine_press.png",
+        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\mipmap-xhdpi\\mine_press.png"
     }
 ]
