@@ -1,6 +1,9 @@
 package cn.edu.stu.chat.view.activity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -85,6 +88,7 @@ public class FeedBackActivity extends BaseActivity {
                     }
                 }).show();
     }
+
 
     @Override
     public void onDestroy(){
