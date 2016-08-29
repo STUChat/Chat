@@ -56,4 +56,8 @@
     <dimen name="notification_text_size">16sp</dimen>
     <dimen name="notification_time_text_size">13sp</dimen>
     <dimen name="notification_photo_size">50dp</dimen>
+
+    <!--反馈-->
+    <dimen name="feedback_edit_height">350dp</dimen>
+
 </resources>

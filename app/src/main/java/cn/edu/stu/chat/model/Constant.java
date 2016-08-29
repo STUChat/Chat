@@ -46,6 +46,9 @@ public class Constant {
      * 修改密码的标题
      */
     public final static String ChangePwdTitle = "修改密码";
-
+    /**
+     * 反馈的标题
+     */
+    public final static String FeedBackTitle = "反馈";
 
 }

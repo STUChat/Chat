@@ -58,22 +58,23 @@ public class UpdateUserInfoPresenter implements IUpdateUserInfoPresenter {
     }
 
     @Override
-    public void update(String newContent) {
+    public void update(final String newContent) {
         if(newContent==null || newContent.equals(""))
             updateUserInfoView.showFailDialog(title,"不能为空");
         else if(newContent.equals(oldContent))
             updateUserInfoView.showFailDialog(title,"不能与原来相同");
         else {
-            if(id==0){
-                user.setName(newContent);
-            }else if(id==1){
-                user.setMotto(newContent);
-            }
             Map<String,String> map = new HashMap<>();
             map.put("token",user.getToken());
-            map.put("name",user.getName());
             map.put("gender",user.getGender());
-            map.put("motto",user.getMotto());
+            map.put("headUrl",user.getHeadUrl());
+            if(id==0){
+                map.put("name",newContent);
+                map.put("motto",user.getMotto());
+            }else if(id==1){
+                map.put("name",user.getName());
+                map.put("motto",newContent);
+            }
             HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
                 @Override
                 public void onCompleted() {
@@ -89,6 +90,11 @@ public class UpdateUserInfoPresenter implements IUpdateUserInfoPresenter {
                 @Override
                 public void onNext(ChatResponse chatResponse) {
                     if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
+                        if(id==0){
+                            user.setName(newContent);
+                        }else if(id==1){
+                            user.setMotto(newContent);
+                        }
                         updateUserInfoView.setUser(user);
                         updateUserInfoView.showSucessDialog(title);
                         return;

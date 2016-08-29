@@ -27,7 +27,13 @@ public class UriConstant {
 
     /**
      * 修改密码
-     * 参数:token,password
+     * 参数:token,password,newPassword
      */
     public final static String ChangePass = "ChangePass.aspx";
+
+    /**
+     * 反馈
+     * 参数:
+     */
+    public final static String FeedBack = "";
 }

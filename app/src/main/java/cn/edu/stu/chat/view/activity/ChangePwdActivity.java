@@ -1,6 +1,7 @@
 package cn.edu.stu.chat.view.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -17,14 +18,16 @@ import cn.edu.stu.chat.http.NetworkHelper;
 import cn.edu.stu.chat.model.ChatResponse;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.UriConstant;
+import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
+import cn.pedant.SweetAlert.SweetAlertDialog;
 import rx.Subscriber;
 
 /**
  * Created by dell on 2016/8/29.
  */
-public class ChanagePwdActivity extends BaseActivity {
+public class ChangePwdActivity extends BaseActivity {
     @BindView(R.id.change_pwd_old_pwd)
     EditText oldPwd;
     @BindView(R.id.change_pwd_new_pwd)
@@ -37,7 +40,7 @@ public class ChanagePwdActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_change_pwd);
         setToolbar(R.id.toolbar);
         setTitle(Constant.ChangePwdTitle);
         ButterKnife.bind(this);
@@ -56,9 +59,12 @@ public class ChanagePwdActivity extends BaseActivity {
             showErrorMessage("两次密码不相同");
             return;
         }
+        Log.e("TAG",repeat_pwd+"  "+new_pwd);
+        User user = ((ChatApp)getApplication()).getUser();
         Map<String,String> map = new HashMap<>();
-        map.put("token",((ChatApp)getApplication()).getUser().getToken());
-//        map.put();
+        map.put("token",user.getToken());
+        map.put("password",old_pwd);
+        map.put("newPassword",new_pwd);
         HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {
@@ -66,7 +72,7 @@ public class ChanagePwdActivity extends BaseActivity {
             }
             @Override
             public void onError(Throwable e) {
-                if(!NetworkHelper.isNetworkAvailable(ChanagePwdActivity.this))
+                if(!NetworkHelper.isNetworkAvailable(ChangePwdActivity.this))
                    showErrorMessage("网络不可用");
                 else
                    showErrorMessage(e.getMessage());
@@ -74,7 +80,7 @@ public class ChanagePwdActivity extends BaseActivity {
             @Override
             public void onNext(ChatResponse chatResponse) {
                 if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
-                    ToastHelper.showSuccessDialog(ChanagePwdActivity.this,Constant.ChangePwdTitle,"修改成功");
+                    showSucessDialog("修改成功");
                     return;
                 }
                 if(chatResponse.getResponseMsg()!=null&&!chatResponse.getResponseMsg().equals(""))
@@ -87,5 +93,16 @@ public class ChanagePwdActivity extends BaseActivity {
 
     private  void showErrorMessage(String message){
         ToastHelper.showErrorDialog(this,Constant.ChangePwdTitle,message);
+    }
+
+    private void showSucessDialog(String title){
+        new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE).setTitleText(title).setConfirmText("确定")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sDialog) {
+                        sDialog.dismissWithAnimation();
+                        finish();
+                    }
+                }).show();
     }
 }
