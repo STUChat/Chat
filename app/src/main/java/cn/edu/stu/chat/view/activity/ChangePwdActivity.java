@@ -59,7 +59,6 @@ public class ChangePwdActivity extends BaseActivity {
             showErrorMessage("两次密码不相同");
             return;
         }
-        Log.e("TAG",repeat_pwd+"  "+new_pwd);
         User user = ((ChatApp)getApplication()).getUser();
         Map<String,String> map = new HashMap<>();
         map.put("token",user.getToken());

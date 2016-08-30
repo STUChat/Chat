@@ -11,14 +11,14 @@ import android.widget.TextView;
 import java.util.List;
 
 import cn.edu.stu.chat.R;
-import cn.edu.stu.chat.model.FriendInfo;
+import cn.edu.stu.chat.model.Friend;
 
 /**
  * Created by dell on 2016/8/25.
  */
 public class ContactAdapter extends BaseAdapter {
     private Context context;
-    private List<FriendInfo> list;
+    private List<Friend> list;
     private LayoutInflater inflater;
 
     public ContactAdapter(Context context, List list){
@@ -38,7 +38,7 @@ public class ContactAdapter extends BaseAdapter {
     }
 
     @Override
-    public FriendInfo getItem(int i) {
+    public Friend getItem(int i) {
         return list.get(i);
     }
 

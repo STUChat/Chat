@@ -33,7 +33,27 @@ public class UriConstant {
 
     /**
      * 反馈
-     * 参数:
+     * 参数: token,content
      */
-    public final static String FeedBack = "";
+    public final static String FeedBack = "Feedback.aspx";
+
+    /**
+     * 搜索好友
+     * 参数: token,select
+     */
+    public final static String FindUser = "FindUser.aspx";
+
+    /**
+     * 忘记密码
+     * 参数:email
+     */
+    public final static String ForgotPwd = "TestEmail.aspx";
+
+    /**
+     * 获取好友列表
+     * 参数:token
+     * 返回:userID,name,email,headUrl,gender,motto
+     */
+    public final static String FindFriendList = "FindFriendList.aspx";
+
 }

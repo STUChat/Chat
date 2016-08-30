@@ -7,6 +7,7 @@
 
     <!--账号-->
     <EditText
+        android:id="@+id/forgot_pwd_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/forgot_hint_email_or_phone"
@@ -17,47 +18,13 @@
         android:layout_marginTop="@dimen/border_magin"
         />
 
-    <!--获取验证码-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/border_magin"
-        android:layout_marginRight="@dimen/border_magin"
-        android:layout_marginTop="@dimen/border_magin"
-        >
-        <EditText
-            android:id="@+id/forgot_code_editText"
-            android:layout_marginTop="@dimen/border_magin"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:inputType="number" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/corner_button"
-            android:text="@string/forgot_get_codes"
-            android:textColor="@color/white"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
-
-    <!--新密码-->
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/forgot_new_pwd"
-        android:gravity="center"
-        android:inputType="textPassword"
-        android:layout_marginLeft="@dimen/border_magin"
-        android:layout_marginRight="@dimen/border_magin"
-        android:layout_marginTop="@dimen/border_magin"
-        />
-
     <!--确认-->
     <Button
-        android:id="@+id/forgon_confirm_btn"
+        android:id="@+id/forgot_confirm_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/corner_button"
+        android:layout_marginTop="@dimen/border_magin"
         android:text="@string/forgot_confirm"
         android:textSize="@dimen/title_font_size"
         android:layout_margin="@dimen/border_magin"

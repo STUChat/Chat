@@ -5,7 +5,6 @@ package cn.edu.stu.chat.model;
  * 常量类
  */
 public class Constant {
-
     /**
      *shareperference文件名
      */
@@ -50,5 +49,8 @@ public class Constant {
      * 反馈的标题
      */
     public final static String FeedBackTitle = "反馈";
-
+    /**
+     * 忘记密码标题
+     */
+    public final static String ForgotPwdTitle = "忘记密码";
 }

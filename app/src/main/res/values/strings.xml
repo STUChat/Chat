@@ -15,7 +15,7 @@
 
     <!--忘记密码-->
     <string name="forgot_password">忘记密码</string>
-    <string name="forgot_hint_email_or_phone">请输入邮箱或者手机号</string>
+    <string name="forgot_hint_email_or_phone">请输入邮箱</string>
     <string name="forgot_get_codes">获取验证码</string>
     <string name="forgot_new_pwd">新密码</string>
     <string name="forgot_confirm">确认</string>

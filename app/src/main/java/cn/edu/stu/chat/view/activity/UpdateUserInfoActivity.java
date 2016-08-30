@@ -6,6 +6,10 @@ import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.http.NetworkHelper;
@@ -22,12 +26,13 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
  */
 public class UpdateUserInfoActivity extends BaseActivity implements IUpdateUserInfoView{
     private IUpdateUserInfoPresenter presenter;
-    private EditText editText;
-    private Button confirm;
+    @BindView(R.id.change_user_info_edit)
+    EditText editText;
 
     public void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_change_user_info);
+        ButterKnife.bind(this);
         Intent intent = getIntent();
         initView();
         presenter = new UpdateUserInfoPresenter();
@@ -36,15 +41,17 @@ public class UpdateUserInfoActivity extends BaseActivity implements IUpdateUserI
     }
 
     private void initView() {
-        editText = (EditText)findViewById(R.id.change_user_info_edit);
-        confirm = (Button)findViewById(R.id.change_user_info_confirm);
         setToolbar(R.id.main_toolbar);
-        confirm.setOnClickListener(new View.OnClickListener() {
+        showToolbarLeftBtn(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                presenter.update(editText.getText().toString());
+                finish();
             }
         });
+    }
+    @OnClick(R.id.change_user_info_confirm)
+    public void confirm(){
+        presenter.update(editText.getText().toString());
     }
 
     @Override

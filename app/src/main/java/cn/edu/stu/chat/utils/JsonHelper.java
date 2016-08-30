@@ -1,7 +1,10 @@
 package cn.edu.stu.chat.utils;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
@@ -35,9 +38,20 @@ public class JsonHelper {
      * @param <T>
      * @return
      */
-    public static <T> List<T>  getResponseList(ChatResponse response, Class<T> cls) {
-        if(response.getResponseData()!=null)
-            return getList(response.getResponseData().toString(),cls);
+    public static <T> List<T>  getResponseList(ChatResponse response, Class<T> cls){
+        if(response.getResponseData()!=null) {
+            if (response.getResponseData() instanceof ArrayList) {
+                ArrayList<T> list = new ArrayList<>();
+                for(Object o: (List)response.getResponseData()){
+                    T t = getValue(o,cls);
+                    list.add(t);
+//                    Log.e("TAG", "getResponseList: "+t );
+                }
+                return list;
+            } else if (response.getResponseData() instanceof String) {
+                return getList(response.getResponseData().toString(), cls);
+            }
+        }
         return null;
     }
 
@@ -84,7 +98,7 @@ public class JsonHelper {
         if(str!=null) {
             try {
                 Gson gson = new Gson();
-                if(s instanceof String)
+                if(str instanceof String)
                     s = (String)str;
                 else
                     s = gson.toJson(str);
@@ -95,5 +109,4 @@ public class JsonHelper {
         }
         return t;
     }
-
 }
