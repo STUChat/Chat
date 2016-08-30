@@ -53,7 +53,6 @@
             android:layout_alignParentRight="true"
             android:layout_gravity="center_vertical"
             android:text="猜猜我是谁"
-            android:clickable="true"
             android:textColor="@color/gray"
             android:textSize="@dimen/default_font_size"/>
     </RelativeLayout>
@@ -85,7 +84,6 @@
             android:layout_alignParentRight="true"
             android:layout_gravity="center_vertical"
             android:text="保密"
-            android:clickable="true"
             android:textColor="@color/gray"
             android:textSize="@dimen/default_font_size"/>
     </RelativeLayout>

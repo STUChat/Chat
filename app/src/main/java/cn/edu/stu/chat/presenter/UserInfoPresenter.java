@@ -46,36 +46,37 @@ public class UserInfoPresenter implements IUserInfoPresenter {
 
     @Override
     public void upateGender(final int gender) {
-            Map<String,String> map = new HashMap<>();
-            map.put("token",user.getToken());
-            map.put("name",user.getName());
-            map.put("gender",gender+"");
-            map.put("motto",user.getMotto());
-            HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
-                @Override
-                public void onCompleted() {
+        Map<String,String> map = new HashMap<>();
+        map.put("token",user.getToken());
+        map.put("name",user.getName());
+        map.put("gender",gender+"");
+        map.put("headUrl",user.getHeadUrl());
+        map.put("motto",user.getMotto());
+        HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
+            @Override
+            public void onCompleted() {
 
+            }
+            @Override
+            public void onError(Throwable e) {
+                if(!userInfoView.isNetworkAvialable())
+                    userInfoView.showFailDialog(Constant.UserInfoTitle,"网络不可用");
+                else
+                    userInfoView.showFailDialog(Constant.UserInfoTitle,e.getMessage());
+            }
+            @Override
+            public void onNext(ChatResponse chatResponse) {
+                if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
+                    user.setGender(gender+"");
+                    userInfoView.showUserInfo(user);
+                    return;
                 }
-                @Override
-                public void onError(Throwable e) {
-                    if(!userInfoView.isNetworkAvialable())
-                        userInfoView.showFailDialog(Constant.UserInfoTitle,"网络不可用");
-                    else
-                        userInfoView.showFailDialog(Constant.UserInfoTitle,e.getMessage());
-                }
-                @Override
-                public void onNext(ChatResponse chatResponse) {
-                    if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
-                        user.setGender(gender+"");
-                        userInfoView.showUserInfo(user);
-                        return;
-                    }
-                    if(chatResponse.getResponseMsg()!=null&&!chatResponse.getResponseMsg().equals(""))
-                        userInfoView.showFailDialog(Constant.UserInfoTitle,chatResponse.getResponseMsg());
-                    else
-                        userInfoView.showFailDialog(Constant.UserInfoTitle,"未知错误");
-                }
-            }).post(UriConstant.UpdateUserInfo,map);
+                if(chatResponse.getResponseMsg()!=null&&!chatResponse.getResponseMsg().equals(""))
+                    userInfoView.showFailDialog(Constant.UserInfoTitle,chatResponse.getResponseMsg());
+                else
+                    userInfoView.showFailDialog(Constant.UserInfoTitle,"未知错误");
+            }
+        }).post(UriConstant.UpdateUserInfo,map);
     }
 
 }

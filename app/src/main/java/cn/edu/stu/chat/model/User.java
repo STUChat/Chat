@@ -75,6 +75,7 @@ public class User{
                 "gender:"+gender+"\n"+
                 "email:"+email+"\n"+
                 "token:"+token+"\n"+
-                "motto:"+motto;
+                "motto:"+motto+"\n"+
+                "headUrl"+headUrl;
     }
 }

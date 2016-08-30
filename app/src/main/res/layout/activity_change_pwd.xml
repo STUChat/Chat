@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/change_pwd_new"
+            android:text="@string/change_pwd_old"
             android:textColor="@android:color/black"
             android:textSize="@dimen/middle_font_size"/>
 

@@ -111,6 +111,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     public void jumpToActivity(Class<? extends Activity> activityClass) {
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
+        finish();
     }
 
     @Override

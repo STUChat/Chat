@@ -13,11 +13,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.model.User;
-import cn.edu.stu.chat.view.activity.ChanagePwdActivity;
+import cn.edu.stu.chat.view.activity.ChangePwdActivity;
+import cn.edu.stu.chat.view.activity.FeedBackActivity;
 import cn.edu.stu.chat.view.activity.LoginActivity;
 import cn.edu.stu.chat.view.activity.UserInfoActivity;
 import cn.edu.stu.chat.view.api.BaseActivity;
@@ -27,13 +29,14 @@ import cn.edu.stu.chat.view.widget.CircleImageView;
 /**
  * Created by cheng on 16-8-22.
  */
-public class MineFragment extends BaseFragment implements View.OnClickListener{
+public class MineFragment extends BaseFragment {
+    @BindView(R.id.mine_photo)
+    CircleImageView photoImage;
+    @BindView(R.id.mine_name)
+    TextView nameTextView;
+    @BindView(R.id.mine_gender_image)
+    ImageView genderImage;
 
-    private LinearLayout userLayout;
-    private LinearLayout logoutLayout;
-    private CircleImageView photoImage;
-    private TextView nameTextView;
-    private ImageView genderImage;
     private User user;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,19 +49,9 @@ public class MineFragment extends BaseFragment implements View.OnClickListener{
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         View view = inflater.inflate(R.layout.fragment_mine, null);
-        initView(view);
+        ButterKnife.bind(this, view);
         initData();
         return view;
-    }
-
-    private void initView(View view) {
-        userLayout =(LinearLayout)view.findViewById(R.id.mine_user);
-        logoutLayout = (LinearLayout)view.findViewById(R.id.mine_logout);
-        nameTextView = (TextView)view.findViewById(R.id.mine_name);
-        photoImage = (CircleImageView)view.findViewById(R.id.mine_photo);
-        genderImage = (ImageView)view.findViewById(R.id.mine_gender_image);
-        userLayout.setOnClickListener(this);
-        logoutLayout.setOnClickListener(this);
     }
 
     private void initData(){
@@ -75,33 +68,26 @@ public class MineFragment extends BaseFragment implements View.OnClickListener{
         }
     }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.mine_user://查看用户信息
-                checkUserInfo();
-                break;
-            case R.id.mine_logout://注销
-                userLogout();
-                break;
-            case R.id.mine_change_pwd://修改密码
-                changePwd();
-                break;
-        }
+    @OnClick(R.id.mine_change_pwd)
+    public void changePwd() {
+        getActivity().startActivity(new Intent(getContext(), ChangePwdActivity.class));
     }
 
-    private void changePwd() {
-        getActivity().startActivity(new Intent(getContext(), ChanagePwdActivity.class));
-    }
-
+    @OnClick(R.id.mine_user)
     public void checkUserInfo(){
         getActivity().startActivity(new Intent(getContext(), UserInfoActivity.class));
     }
 
-    public void userLogout(){
+    @OnClick(R.id.mine_logout)
+    public void logout(){
         ((BaseActivity)getActivity()).logout();
         jumpToActivity(LoginActivity.class);
         getActivity().finish();
+    }
+
+    @OnClick(R.id.mine_feedback)
+    public void feedBack(){
+        jumpToActivity(FeedBackActivity.class);
     }
 
     public void jumpToActivity(Class<? extends Activity> activityClass) {
