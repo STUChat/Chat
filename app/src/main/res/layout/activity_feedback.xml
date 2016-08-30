@@ -3,8 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/main_toolbar"/>
-    <FrameLayout
-        android:id="@+id/feed_back_layout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/feedback_edit_height"
         android:layout_margin="@dimen/border_magin"
@@ -16,9 +15,9 @@
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:textSize="@dimen/middle_font_size"
-            android:gravity="top"
-            android:background="@color/white"/>
-    </FrameLayout>
+            android:background="@color/white"
+            android:gravity="top" />
+    </LinearLayout>
     <Button
         android:id="@+id/feed_back_confirm"
         android:layout_width="match_parent"
