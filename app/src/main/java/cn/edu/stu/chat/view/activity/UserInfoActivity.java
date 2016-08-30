@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.http.NetworkHelper;
@@ -20,15 +23,19 @@ import cn.edu.stu.chat.view.api.IUserInfoView;
 /**
  * Created by dell on 2016/8/25.
  */
-public class UserInfoActivity extends BaseActivity implements IUserInfoView, View.OnClickListener{
+public class UserInfoActivity extends BaseActivity implements IUserInfoView{
     private IUserInfoPresenter userInfoPresenter;
-    private TextView nameTextview;
-    private TextView genderTextview;
-    private TextView mottoTextview;
+    @BindView(R.id.user_info_name)
+    TextView nameTextview;
+    @BindView(R.id.user_info_gender)
+    TextView genderTextview;
+    @BindView(R.id.user_info_motto)
+    TextView mottoTextview;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info);
+        ButterKnife.bind(this);
         initView();
         userInfoPresenter = new UserInfoPresenter();
         userInfoPresenter.attach(this);
@@ -37,13 +44,12 @@ public class UserInfoActivity extends BaseActivity implements IUserInfoView, Vie
 
     private void initView() {
         setToolbar(R.id.toolbar);
-        nameTextview = (TextView)findViewById(R.id.user_info_name);
-        genderTextview = (TextView)findViewById(R.id.user_info_gender);
-        mottoTextview = (TextView)findViewById(R.id.user_info_motto);
-        findViewById(R.id.user_info_gender_layout).setOnClickListener(this);
-        findViewById(R.id.user_info_name_layout).setOnClickListener(this);
-        findViewById(R.id.user_info_motto_layout).setOnClickListener(this);
-
+        showToolbarLeftBtn(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     @Override
@@ -81,26 +87,21 @@ public class UserInfoActivity extends BaseActivity implements IUserInfoView, Vie
         userInfoPresenter.deAttach();
     }
 
-    @Override
-    public void onClick(View view) {
-        Intent intent;
-        switch (view.getId()){
-            case R.id.user_info_name_layout:
-                intent = new Intent(UserInfoActivity.this,UpdateUserInfoActivity.class);
-                intent.putExtra("id",0);
-                startActivity(intent);
-                break;
-            case R.id.user_info_motto_layout:
-                intent = new Intent(UserInfoActivity.this,UpdateUserInfoActivity.class);
+    @OnClick(R.id.user_info_name_layout)
+    public void updateName() {
+        Intent intent = new Intent(UserInfoActivity.this, UpdateUserInfoActivity.class);
+        intent.putExtra("id", 0);
+        startActivity(intent);
+    }
+    @OnClick(R.id.user_info_gender_layout)
+    public void updateGender(){
+        showGenderDailog();
+    }
+    @OnClick(R.id.user_info_motto_layout)
+    public void updateMotto(){
+        Intent intent = new Intent(UserInfoActivity.this,UpdateUserInfoActivity.class);
                 intent.putExtra("id",1);
                 startActivity(intent);
-                break;
-            case R.id.user_info_photo:
-                break;
-            case R.id.user_info_gender_layout:
-                showGenderDailog();
-                break;
-        }
     }
 
     private void showGenderDailog(){
@@ -120,6 +121,7 @@ public class UserInfoActivity extends BaseActivity implements IUserInfoView, Vie
     public void setTitle(String title){
         super.setTitle(title);
     }
+
     @Override
     protected void onResume() {
         super.onResume();

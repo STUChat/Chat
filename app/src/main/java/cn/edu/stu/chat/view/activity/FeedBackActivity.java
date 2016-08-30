@@ -9,6 +9,7 @@ import java.util.HashMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.http.HttpMethods;
 import cn.edu.stu.chat.http.NetworkHelper;
@@ -46,6 +47,8 @@ public class FeedBackActivity extends BaseActivity {
             return;
         }
         HashMap<String,String> map = new HashMap<>();
+        map.put("token",((ChatApp)getApplication()).getUser().getToken());
+        map.put("content",editText.getText().toString());
         HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
             @Override
             public void onCompleted() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#eee"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -39,16 +39,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </FrameLayout>
-
     </LinearLayout>
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:visibility="gone"
-        android:id="@+id/search_listview"
+        android:id="@+id/search_recyclerview"
         android:layout_marginLeft="@dimen/border_magin"
         android:layout_marginRight="@dimen/border_magin"
         android:layout_marginBottom="@dimen/border_magin"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

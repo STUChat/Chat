@@ -40,6 +40,8 @@
         <activity android:name=".view.activity.MessageActivity"/>
         <activity android:name=".view.activity.UserInfoActivity"/>
         <activity android:name=".view.activity.UpdateUserInfoActivity"/>
+        <activity android:name=".view.activity.ChangePwdActivity"/>
+        <activity android:name=".view.activity.FeedBackActivity"/>
         <activity android:name=".view.api.BaseActivity" />
     </application>
 

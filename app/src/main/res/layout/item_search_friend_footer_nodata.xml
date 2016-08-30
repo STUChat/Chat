@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/search_friend_item_nodata_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/border_magin"
+        android:gravity="center"
+        android:text="已经加载完了"/>
+</LinearLayout>

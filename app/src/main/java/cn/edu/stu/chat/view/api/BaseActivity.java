@@ -1,15 +1,10 @@
 package cn.edu.stu.chat.view.api;
 
-
-import android.app.Activity;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 

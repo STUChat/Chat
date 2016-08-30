@@ -40,4 +40,5 @@ public class ChatResponse {
     public void setResponseToken(String responseToken) {
         this.responseToken = responseToken;
     }
+
 }

@@ -12,7 +12,10 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.http.NetworkHelper;
+import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.ContactPresenter;
 import cn.edu.stu.chat.presenter.api.IContactPresenter;
 import cn.edu.stu.chat.view.activity.SearchFriendActivity;
@@ -56,6 +59,21 @@ public class ContactFragment extends BaseFragment implements View.OnClickListene
     public void showDataChange(List list){
         adapter.setListData(list);
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public boolean isNetworkAvailable() {
+        return NetworkHelper.isNetworkAvailable(getContext());
+    }
+
+    @Override
+    public User getUser() {
+        return ((ChatApp)getActivity().getApplication()).getUser();
+    }
+
+    @Override
+    public void showErrorMessage() {
+
     }
 
     @Override
