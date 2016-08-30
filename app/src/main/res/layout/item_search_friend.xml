@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/border_magin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/search_friend_item_photo"
+        android:layout_width="@dimen/contact_photo_size"
+        android:layout_height="@dimen/contact_photo_size"
+        android:layout_marginTop="@dimen/border_magin"
+        android:layout_marginBottom="@dimen/border_magin"
+        android:layout_marginLeft="@dimen/middle_border_magin"
+        android:layout_marginRight="@dimen/border_magin"
+        android:layout_gravity="center"
+        android:src="@mipmap/default_photo"/>
+    <TextView
+        android:id="@+id/search_friend_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/middle_border_magin"
+        android:layout_marginTop="@dimen/border_magin"
+        android:textSize="@dimen/middle_font_size"
+        android:textColor="@color/black"
+        android:text="default"/>
+</LinearLayout>
