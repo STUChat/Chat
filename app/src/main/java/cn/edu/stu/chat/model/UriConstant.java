@@ -54,6 +54,6 @@ public class UriConstant {
      * 参数:token
      * 返回:userID,name,email,headUrl,gender,motto
      */
-    public final static String FindFriendList = "FindFriendList.aspx";
+    public final static String FindFriendList = "GetFriendList.aspx";
 
 }

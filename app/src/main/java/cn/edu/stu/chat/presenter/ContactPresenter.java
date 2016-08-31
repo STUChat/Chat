@@ -54,6 +54,7 @@ public class ContactPresenter implements IContactPresenter {
             public void onError(Throwable e) {
                 if(!contactView.isNetworkAvailable())
                     contactView.showErrorMessage();
+                Log.e("Tag",e.getMessage());
             }
             @Override
             public void onNext(ChatResponse chatResponse) {

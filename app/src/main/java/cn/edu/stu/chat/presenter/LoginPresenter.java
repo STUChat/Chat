@@ -81,7 +81,7 @@ public class LoginPresenter implements ILoginPresenter {
                     }
                     if (loginView.isLogin()) {
                         loginView.saveUsernamePwd(username, password);
-                        loginView.jumpToActivity(MainActivity.class);
+                        loginView.jumpToActivity(MainActivity.class,true);
                         Log.e(TAG, user.toString() );
                         return;
                     }

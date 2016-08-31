@@ -12,7 +12,7 @@ public interface ILoginView extends MvpView {
     public void saveUsernamePwd(String username,String password);
     public boolean isLogin();
     public void showErrorMessage(String text);
-    public void jumpToActivity(Class<? extends Activity> activityClass);
+    public void jumpToActivity(Class<? extends Activity> activityClass,Boolean isFinish);
     public void openEye();
     public void closeEye();
     public void setUser(User user);

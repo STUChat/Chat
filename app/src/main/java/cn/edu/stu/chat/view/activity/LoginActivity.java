@@ -108,10 +108,11 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     }
 
     @Override
-    public void jumpToActivity(Class<? extends Activity> activityClass) {
+    public void jumpToActivity(Class<? extends Activity> activityClass,Boolean isFinish) {
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
-        finish();
+        if(isFinish)
+            finish();
     }
 
     @Override
@@ -122,11 +123,11 @@ public class LoginActivity extends BaseActivity implements ILoginView{
 
     @OnClick(R.id.login_forgot_btn)
     void forgotPassword(){
-        jumpToActivity(ForgotActivity.class);
+        jumpToActivity(ForgotActivity.class,false);
     }
     @OnClick(R.id.login_register_btn)
     void toRegister(){
-        jumpToActivity(RegisterActivity.class);
+        jumpToActivity(RegisterActivity.class,false);
     }
     @OnClick(R.id.login_landing_btn)
     void login(){
