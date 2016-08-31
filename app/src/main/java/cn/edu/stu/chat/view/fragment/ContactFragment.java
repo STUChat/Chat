@@ -58,7 +58,7 @@ public class ContactFragment extends BaseFragment implements View.OnClickListene
         headLayout = (RelativeLayout) headerView.findViewById(R.id.contact_item_new_friend_layout);
         headLayout.setOnClickListener(this);
         listView.addHeaderView(headerView);
-        adapter = new ContactAdapter(getContext(),null);
+        adapter = new ContactAdapter(getContext());
         listView.setAdapter(adapter);
         contactPresenter = new ContactPresenter();
         contactPresenter.attach(this);

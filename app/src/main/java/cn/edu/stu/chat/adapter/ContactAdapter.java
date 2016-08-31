@@ -24,15 +24,13 @@ public class ContactAdapter extends BaseAdapter {
     private List<Friend> list;
     private LayoutInflater inflater;
 
-    public ContactAdapter(Context context, List list){
+    public ContactAdapter(Context context){
         this.context = context;
-        this.list = list;
         this.inflater = LayoutInflater.from(context);
     }
 
     public void setListData(List list){
-        this.list.clear();
-        this.list.addAll(list);
+        this.list = list;
     }
 
     @Override

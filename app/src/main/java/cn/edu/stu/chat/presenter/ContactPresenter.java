@@ -63,7 +63,7 @@ public class ContactPresenter implements IContactPresenter {
             public void onError(Throwable e) {
                 if(!contactView.isNetworkAvailable())
                     contactView.showErrorMessage();
-                Log.e("Tag",e.getMessage());
+                Log.e("Tag1",e.getMessage());
             }
             @Override
             public void onNext(ChatResponse chatResponse) {
@@ -90,7 +90,7 @@ public class ContactPresenter implements IContactPresenter {
             public void onError(Throwable e) {
                 if(!contactView.isNetworkAvailable())
                     contactView.showErrorMessage();
-                Log.e("Tag",e.getMessage());
+                Log.e("Tag2",e.getMessage());
             }
             @Override
             public void onNext(ChatResponse chatResponse) {
