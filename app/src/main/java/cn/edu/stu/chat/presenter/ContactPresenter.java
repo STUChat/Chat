@@ -13,6 +13,7 @@ import cn.edu.stu.chat.model.Friend;
 import cn.edu.stu.chat.model.UriConstant;
 import cn.edu.stu.chat.presenter.api.IContactPresenter;
 import cn.edu.stu.chat.utils.JsonHelper;
+import cn.edu.stu.chat.view.activity.LoginActivity;
 import cn.edu.stu.chat.view.api.IContactView;
 import cn.edu.stu.chat.view.api.MvpView;
 import rx.Subscriber;
@@ -23,7 +24,7 @@ import rx.Subscriber;
 public class ContactPresenter implements IContactPresenter {
     IContactView contactView;
     List<Friend> friendList;
-
+    List<Friend> newfriendList;
     @Override
     public void attach(MvpView view) {
         contactView = (IContactView) view;
@@ -38,12 +39,47 @@ public class ContactPresenter implements IContactPresenter {
     public void init() {
         contactView.setTitle(Constant.ContactTitle);
         friendList = new ArrayList<>();
-        getDataFromInternel();
+        newfriendList = new ArrayList<>();
+        getFriendDataFromInternet();
+        getNewFriendFromInternet();
         //初始化联系人
     }
 
+    @Override
+    public void dealNewFriend() {
+        if(newfriendList!=null && !newfriendList.isEmpty())
+            contactView.jumpToActivity(LoginActivity.class);
+    }
 
-    public void getDataFromInternel() {
+
+    public void getFriendDataFromInternet() {
+        Map<String,String> map = new HashMap();
+        map.put("token",contactView.getUser().getToken());
+        HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
+            @Override
+            public void onCompleted() {
+            }
+            @Override
+            public void onError(Throwable e) {
+                if(!contactView.isNetworkAvailable())
+                    contactView.showErrorMessage();
+                Log.e("Tag",e.getMessage());
+            }
+            @Override
+            public void onNext(ChatResponse chatResponse) {
+                if (chatResponse != null && chatResponse.getResponseCode().equals("1")) {
+                    final List<Friend> list = JsonHelper.getResponseList(chatResponse,Friend.class);
+                    if(list!=null&&!list.isEmpty()){
+                        friendList.clear();
+                        friendList.addAll(list);
+                        contactView.showDataChange(friendList);
+                    }
+                }
+            }
+        }).post(UriConstant.FindFriendList,map);
+    }
+
+    public void getNewFriendFromInternet(){
         Map<String,String> map = new HashMap();
         map.put("token",contactView.getUser().getToken());
         HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
@@ -64,12 +100,12 @@ public class ContactPresenter implements IContactPresenter {
                         Log.e("TAG",friend.toString());
                     }
                     if(list!=null&&!list.isEmpty()){
-                        friendList.clear();
-                        friendList.addAll(list);
-                        contactView.showList(friendList);
+                        newfriendList.clear();
+                        newfriendList.addAll(list);
+                        contactView.showNewFriend(newfriendList.size());
                     }
                 }
             }
-        }).post(UriConstant.FindFriendList,map);
+        }).post(UriConstant.GetFriendReq,map);
     }
 }

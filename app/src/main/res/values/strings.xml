@@ -32,6 +32,7 @@
 
     <!--联系人-->
     <string name="contact_add_friend">添加好友</string>
+    <string name="contact_new_friend">新的好友</string>
 
     <!--我的-->
     <string name="mine_setting">设置</string>

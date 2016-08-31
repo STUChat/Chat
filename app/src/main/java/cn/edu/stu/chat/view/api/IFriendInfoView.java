@@ -14,4 +14,7 @@ public interface IFriendInfoView extends MvpView {
     void jumpToActivity(Class<? extends Activity> activityClass, Boolean isFinish);
     void showInfo(Friend friend);
     void jumpToActivity(Class<? extends Activity> activityClass, Boolean isFinish,Friend friend);
+    User getUser();
+    void showErrorMessage(String message);
+    void showSuccessMessage(String message);
 }

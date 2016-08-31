@@ -1,12 +1,14 @@
 package cn.edu.stu.chat.view.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -32,6 +34,7 @@ import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.widget.LoadMoreDataListener;
 import cn.edu.stu.chat.view.widget.RecycleViewDivider;
+import cn.edu.stu.chat.view.widget.RecyclerOnItemClickListener;
 import rx.Subscriber;
 
 /**
@@ -89,6 +92,17 @@ public class SearchFriendActivity extends BaseActivity {
                         updateData();
                     }
                 });
+        adapter.setOnItemClickListener(new RecyclerOnItemClickListener(){
+            @Override
+            public void onClick(View view,Friend friend) {
+                Intent intent = new Intent(SearchFriendActivity.this,FriendInfoActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("friend",friend);
+                intent.putExtras(bundle);
+                intent.putExtra("classify",Constant.STRANGER);
+                startActivity(intent);
+            }
+        });
     }
 
     private class EditChangedListener implements TextWatcher {
@@ -99,6 +113,7 @@ public class SearchFriendActivity extends BaseActivity {
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
             if (!"".equals(charSequence.toString())) {
                 ivDelete.setVisibility(View.VISIBLE);
+                startSearching(searchEdit.getText().toString());
             } else {
                 ivDelete.setVisibility(View.GONE);
             }

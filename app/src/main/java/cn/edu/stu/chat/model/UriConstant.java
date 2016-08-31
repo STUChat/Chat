@@ -56,4 +56,18 @@ public class UriConstant {
      */
     public final static String FindFriendList = "GetFriendList.aspx";
 
+
+    /**
+     * 获取好友列表
+     * 参数:token,userID
+     * 返回:
+     */
+    public final static String AddFriend = "AddUser.aspx";
+
+    /**
+     * 获取好友列表
+     * 参数:token,userID
+     * 返回:
+     */
+    public final static String GetFriendReq = "GetFriendReq.aspx";
 }

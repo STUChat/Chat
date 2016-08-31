@@ -66,6 +66,7 @@ public class Friend implements Serializable{
                 "gender:"+gender+"\n"+
                 "email:"+email+"\n"+
                 "motto:"+motto+"\n"+
-                "headUrl"+headUrl;
+                "headUrl"+headUrl+"\n"+
+                "UserID:"+userID;
     }
 }

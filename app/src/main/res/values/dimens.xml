@@ -40,6 +40,7 @@
 
     <!--联系人-->
     <dimen name="contact_photo_size">35dp</dimen>
+    <dimen name="contact_notify_height">45dp</dimen>
 
     <!--个人信息-->
     <dimen name="user_info_photo_size">50dp</dimen>

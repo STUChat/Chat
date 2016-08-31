@@ -11,10 +11,12 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.http.NetworkHelper;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.Friend;
+import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.FriendInfoPresenter;
 import cn.edu.stu.chat.presenter.api.IFriendInfoPresenter;
 import cn.edu.stu.chat.utils.ToastHelper;
@@ -96,7 +98,7 @@ public class FriendInfoActivity extends BaseActivity implements IFriendInfoView{
         presenter.addFriend();
     }
 
-    private  void showErrorMessage(String message){
+    public void showErrorMessage(String message){
         ToastHelper.showErrorDialog(this, Constant.FriendInfoTitle,message);
     }
 
@@ -126,5 +128,10 @@ public class FriendInfoActivity extends BaseActivity implements IFriendInfoView{
         startActivity(intent);
         if(isFinish)
             finish();
+    }
+
+    @Override
+    public User getUser() {
+        return ((ChatApp)getApplication()).getUser();
     }
 }
