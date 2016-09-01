@@ -33,7 +33,7 @@ import rx.Subscriber;
  */
 public class NewFriendActivity extends BaseActivity{
     private RecyclerView recyclerview;
-    private List<Friend> friends;
+    private ArrayList<Friend> friends;
     private NewFriendAdapter adapter;
     public void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
@@ -128,6 +128,11 @@ public class NewFriendActivity extends BaseActivity{
     }
 
     public void onDestroy(){
+        Intent intent = new Intent(this,MainActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("newFriend",friends);
+        intent.putExtras(bundle);
+        setResult(RESULT_OK, intent);
         super.onDestroy();
     }
 }

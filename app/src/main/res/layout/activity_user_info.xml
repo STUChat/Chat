@@ -5,6 +5,7 @@
     <include layout="@layout/main_toolbar"/>
 
     <RelativeLayout
+        android:id="@+id/user_info_photo_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -16,7 +17,7 @@
             android:text="@string/user_info_photo"
             android:textColor="@color/black"
             android:textSize="@dimen/middle_font_size"/>
-        <cn.edu.stu.chat.view.widget.CircleImageView
+        <ImageView
             android:id="@+id/user_info_photo"
             android:layout_width="@dimen/user_info_photo_size"
             android:layout_height="@dimen/user_info_photo_size"

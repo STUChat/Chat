@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -100,7 +101,7 @@ public class ContactFragment extends BaseFragment implements View.OnClickListene
         Bundle bundle = new Bundle();
         bundle.putSerializable("newFriend",list);
         intent.putExtras(bundle);
-        startActivity(intent);
+        startActivityForResult(intent,1);
     }
 
     @Override
@@ -142,12 +143,19 @@ public class ContactFragment extends BaseFragment implements View.OnClickListene
     @Override
     public void showNewFriend(int num){
         listView.setVisibility(View.VISIBLE);
-        TextView numText = (TextView)headerView.findViewById(R.id.contact_item_new_friend);
         if(num>=1) {
+            Log.e("tag",num+"");
+            TextView numText = (TextView)headerView.findViewById(R.id.contact_item_new_friend);
             headerView.findViewById(R.id.contact_item_new_friend_num_layout).setVisibility(View.VISIBLE);
             numText.setText(num + "");
-        }else{
+        }
+        else {
             headerView.findViewById(R.id.contact_item_new_friend_num_layout).setVisibility(View.GONE);
         }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        contactPresenter.dealResult(resultCode,data);
     }
 }

@@ -1,5 +1,7 @@
 package cn.edu.stu.chat.presenter;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -15,6 +17,7 @@ import cn.edu.stu.chat.presenter.api.IContactPresenter;
 import cn.edu.stu.chat.utils.JsonHelper;
 import cn.edu.stu.chat.view.activity.LoginActivity;
 import cn.edu.stu.chat.view.activity.NewFriendActivity;
+import cn.edu.stu.chat.view.activity.SearchFriendActivity;
 import cn.edu.stu.chat.view.api.IContactView;
 import cn.edu.stu.chat.view.api.MvpView;
 import rx.Subscriber;
@@ -50,6 +53,8 @@ public class ContactPresenter implements IContactPresenter {
     public void dealNewFriend() {
         if(newfriendList!=null && !newfriendList.isEmpty())
             contactView.jumpToActivity(NewFriendActivity.class,(ArrayList<Friend>)newfriendList);
+        else
+            contactView.jumpToActivity(SearchFriendActivity.class);
     }
 
     public void getFriendDataFromInternet() {
@@ -103,11 +108,19 @@ public class ContactPresenter implements IContactPresenter {
                         newfriendList.clear();
                         newfriendList.addAll(list);
                         contactView.showNewFriend(newfriendList.size());
-                    }else{
-                        contactView.showNewFriend(0);//無新好友
                     }
                 }
             }
         }).post(UriConstant.GetFriendReq,map);
+    }
+
+    public void dealResult(int resultCode, Intent data) {
+        if(resultCode== Activity.RESULT_OK) {//还有没处理的好友{
+            newfriendList =(ArrayList<Friend>)data.getExtras().getSerializable("newFriend");
+            contactView.showNewFriend(newfriendList.size());
+        }else{
+            newfriendList.clear();
+            contactView.showNewFriend(0);
+        }
     }
 }

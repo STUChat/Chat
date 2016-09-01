@@ -43,7 +43,7 @@
     <dimen name="contact_notify_height">45dp</dimen>
 
     <!--个人信息-->
-    <dimen name="user_info_photo_size">50dp</dimen>
+    <dimen name="user_info_photo_size">60dp</dimen>
 
     <!--消息-->
     <dimen name="message_input_bar_img_height">40dp</dimen>
