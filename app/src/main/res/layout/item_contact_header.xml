@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/contact_item_new_friend_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+        <ImageView
+            android:layout_width="@dimen/contact_photo_size"
+            android:layout_height="@dimen/contact_photo_size"
+            android:layout_marginTop="@dimen/border_magin"
+            android:layout_marginBottom="@dimen/border_magin"
+            android:layout_marginRight="@dimen/border_magin"
+            android:layout_marginLeft="@dimen/middle_border_magin"
+            android:layout_gravity="center"
+            android:src="@mipmap/contact_new_friend"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/middle_border_magin"
+            android:layout_marginTop="@dimen/border_magin"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/black"
+            android:text="@string/contact_new_friend"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contact_item_new_friend_num_layout"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/middle_border_magin"
+        android:background="@drawable/message_message_number_item_bg"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/contact_item_new_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/message_not_read_font_size"
+            android:textColor="@color/white"
+            android:text="1"/>
+    </FrameLayout>
+</RelativeLayout>

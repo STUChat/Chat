@@ -138,7 +138,7 @@ public class SearchFriendAdapter extends RecyclerView.Adapter {
                 @Override
                 public void onClick(View v) {
                     if (mOnitemClickListener != null)
-                        mOnitemClickListener.onClick(v);
+                        mOnitemClickListener.onClick(v,list.get(getAdapterPosition()));
                 }
             });
         }

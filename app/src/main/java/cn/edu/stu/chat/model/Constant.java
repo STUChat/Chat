@@ -17,6 +17,11 @@ public class Constant {
      * 欢迎页面跳转时间
      */
     public final static long WELCOME_JUMP_TIME = 1000;
+
+    public static final int FRIEND = 0;//朋友
+
+    public static final int STRANGER = 1;//熟人
+
     /**
      *登陆Activity的标题
      */
@@ -53,4 +58,8 @@ public class Constant {
      * 忘记密码标题
      */
     public final static String ForgotPwdTitle = "忘记密码";
+    /**
+     * 他人详细信息标题
+     */
+    public final static String FriendInfoTitle = "详细信息";
 }

@@ -1,6 +1,7 @@
 package cn.edu.stu.chat.view.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -53,6 +54,12 @@ public class MessageActivity extends BaseActivity {
 //        client.setSendQ(sendQ);
 //        recvQ = app.getRecvQ();
 
+        /**
+         * 获取好友信息包括Userid
+         * Intent intent = getIntent();
+         * Friend friend = (Friend)intent.getExtras().getSerializable("friend");
+         * friend.getUserId();
+         */
         MessageDetailModel data = new MessageDetailModel();
         data.setMsg("傻孩子你怎么会是傻孩子!!!明天要去哪里，我也不知道");
         data.setName("Terence");
@@ -69,44 +76,4 @@ public class MessageActivity extends BaseActivity {
         initListener();
 
     }
-    public void initListener(){
-        userInput.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(userInput.getText().toString().length() != 0) {
-                    add_bn.setVisibility(View.GONE);
-                    send_bn.setVisibility(View.VISIBLE);
-                }else{
-                    add_bn.setVisibility(View.VISIBLE);
-                    send_bn.setVisibility(View.GONE);
-                }
-
-            }
-        });
-        send_bn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String msg = userInput.getText().toString();
-                Log.e("send",msg);
-                app.getSendQ().add("id2"+'#'+"id1"+'#'+msg);
-
-            }
-        });
-    }
-
-    @OnClick(R.id.input_text)
-    void focus(){
-        userInput.setFocusable(true);
-    }
-
 }

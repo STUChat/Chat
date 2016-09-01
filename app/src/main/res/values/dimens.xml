@@ -39,7 +39,8 @@
     <dimen name="mine_item_size">35dp</dimen>
 
     <!--联系人-->
-    <dimen name="contact_photo_size">30dp</dimen>
+    <dimen name="contact_photo_size">35dp</dimen>
+    <dimen name="contact_notify_height">45dp</dimen>
 
     <!--个人信息-->
     <dimen name="user_info_photo_size">50dp</dimen>
@@ -61,4 +62,15 @@
     <dimen name="feedback_edit_height">350dp</dimen>
     <dimen name="button_padding">5dp</dimen>
 
+    <!--好友信息-->
+    <dimen name="friend_info_size">250dp</dimen>
+    <dimen name="friend_info_photo_size">60dp</dimen>
+    <dimen name="friend_info_border_margin">20dp</dimen>
+    <dimen name="friend_info_nickname_top_margin">30dp</dimen>
+    <dimen name="friend_info_nickname_left_margin">30dp</dimen>
+    <dimen name="friend_info_gender_top_margin">30dp</dimen>
+    <dimen name="friend_info_photo_top_margin">50dp</dimen>
+    <dimen name="friend_info_motto_left_margin">30dp</dimen>
+    <dimen name="friend_info_motto_top_margin">10dp</dimen>
+    <dimen name="friend_info_btn_top_margin">40dp</dimen>
 </resources>

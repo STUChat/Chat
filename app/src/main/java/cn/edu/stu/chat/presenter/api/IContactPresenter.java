@@ -5,4 +5,5 @@ package cn.edu.stu.chat.presenter.api;
  */
 public interface IContactPresenter extends IPresenter {
     public void init();
+    void dealNewFriend();
 }

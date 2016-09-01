@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Terence on 2016/8/22.
  */
-public class User{
+public class User implements Serializable{
     String headUrl;//用户头像url
     String name;//用户昵称
     String gender;//用户性别 0:保密 1.男 2.女

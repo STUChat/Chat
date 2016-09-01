@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <include layout="@layout/main_toolbar"/>
+    <RelativeLayout
+        android:id="@+id/friend_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/friend_info_size"
+        android:background="@color/white"
+        android:clickable="true">
+        <cn.edu.stu.chat.view.widget.CircleImageView
+            android:id="@+id/friend_info_photo"
+            android:layout_width="@dimen/friend_info_photo_size"
+            android:layout_height="@dimen/friend_info_photo_size"
+            android:src="@mipmap/default_photo"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/friend_info_photo_top_margin"
+            android:layout_centerHorizontal="true">
+        </cn.edu.stu.chat.view.widget.CircleImageView>
+        <LinearLayout
+            android:id="@+id/friend_info_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_info_photo"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/frined_info_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/friend_info_nickname_top_margin"
+                android:layout_marginLeft="@dimen/friend_info_nickname_left_margin"
+                android:text="@string/mine_default_nickname"
+                android:maxLength="10"
+                android:textSize="@dimen/middle_font_size"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/frined_info_gender_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/friend_info_gender_top_margin"
+                android:layout_marginLeft="@dimen/border_magin"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_info_msg"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/friend_info_motto_top_margin"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/friend_info_motto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/friend_info_motto_top_margin"
+                android:layout_marginLeft="@dimen/friend_info_motto_left_margin"
+                android:layout_marginRight="@dimen/friend_info_motto_left_margin"
+                android:textSize="@dimen/middle_font_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/friend_info_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/middle_border_magin"
+        android:layout_marginRight="@dimen/middle_border_magin"
+        android:layout_marginTop="@dimen/friend_info_btn_top_margin"
+        android:background="@drawable/corner_button"
+        android:text="@string/friend_info_message"
+        android:textSize="@dimen/middle_font_size"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/friend_info_add_friend_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/middle_border_magin"
+        android:layout_marginRight="@dimen/middle_border_magin"
+        android:layout_marginTop="@dimen/friend_info_btn_top_margin"
+        android:background="@drawable/corner_button"
+        android:text="@string/friend_info_add_friend"
+        android:textSize="@dimen/middle_font_size"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</LinearLayout>
