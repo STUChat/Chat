@@ -7,13 +7,11 @@
     android:background="@color/ChatBackgroundColor"
     tools:context="cn.edu.stu.chat.view.activity.RegisterActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/main_toolbar"
-        />
+    <include layout="@layout/main_toolbar" />
 
     <!--注册账号-->
     <EditText
+        android:id="@+id/register_email_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/register_hint_email_or_phone"
@@ -26,6 +24,7 @@
         />
     <!--昵称-->
     <EditText
+        android:id="@+id/register_name_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/register_hint_nick_name"
@@ -37,6 +36,7 @@
         />
     <!--密码-->
     <EditText
+        android:id="@+id/register_pwd_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/register_hint_password"
@@ -48,6 +48,7 @@
         />
     <!--确认密码-->
     <EditText
+        android:id="@+id/register_confirm_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/register_hint_confirm_password"

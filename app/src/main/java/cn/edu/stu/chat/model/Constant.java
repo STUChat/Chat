@@ -64,4 +64,9 @@ public class Constant {
      * 他人详细信息标题
      */
     public final static String FriendInfoTitle = "详细信息";
+    /**
+     * 添加好友标题
+     */
+    public final static String AddNewFriendTitle = "添加好友";
+
 }
