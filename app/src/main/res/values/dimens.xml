@@ -59,5 +59,6 @@
 
     <!--反馈-->
     <dimen name="feedback_edit_height">350dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
 
 </resources>

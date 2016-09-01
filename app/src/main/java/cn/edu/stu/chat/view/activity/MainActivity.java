@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.utils.ResidentNotificationHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
@@ -94,6 +95,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 break;
         }
         ft.replace(R.id.tab_fragment, fragment).commit();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ChatApp app = (ChatApp) getApplication();
+        app.getSendQ().add("id2#id1#END");
     }
 
     private void initFragmentState() {

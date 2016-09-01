@@ -51,5 +51,6 @@
     <string name="change_user_info_confirm">确认修改</string>
     <string name="change_user_info_change_name">修改昵称</string>
     <string name="change_user_info_change_motto">修改签名</string>
+    <string name="send_message">发送</string>
 
 </resources>
