@@ -113,7 +113,7 @@ public class SearchFriendActivity extends BaseActivity {
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
             if (!"".equals(charSequence.toString())) {
                 ivDelete.setVisibility(View.VISIBLE);
-                startSearching(searchEdit.getText().toString());
+//                startSearching(searchEdit.getText().toString());
             } else {
                 ivDelete.setVisibility(View.GONE);
             }

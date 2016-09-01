@@ -72,4 +72,9 @@
     <dimen name="friend_info_motto_left_margin">30dp</dimen>
     <dimen name="friend_info_motto_top_margin">10dp</dimen>
     <dimen name="friend_info_btn_top_margin">40dp</dimen>
+
+    <!--新的好友-->
+    <dimen name="item_new_friend_btn_height">35dp</dimen>
+    <dimen name="item_new_friend_btn_width">60dp</dimen>
+
 </resources>

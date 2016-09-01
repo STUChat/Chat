@@ -14,6 +14,7 @@ import cn.edu.stu.chat.model.UriConstant;
 import cn.edu.stu.chat.presenter.api.IContactPresenter;
 import cn.edu.stu.chat.utils.JsonHelper;
 import cn.edu.stu.chat.view.activity.LoginActivity;
+import cn.edu.stu.chat.view.activity.NewFriendActivity;
 import cn.edu.stu.chat.view.api.IContactView;
 import cn.edu.stu.chat.view.api.MvpView;
 import rx.Subscriber;
@@ -48,9 +49,8 @@ public class ContactPresenter implements IContactPresenter {
     @Override
     public void dealNewFriend() {
         if(newfriendList!=null && !newfriendList.isEmpty())
-            contactView.jumpToActivity(LoginActivity.class);
+            contactView.jumpToActivity(NewFriendActivity.class,(ArrayList<Friend>)newfriendList);
     }
-
 
     public void getFriendDataFromInternet() {
         Map<String,String> map = new HashMap();
@@ -103,6 +103,8 @@ public class ContactPresenter implements IContactPresenter {
                         newfriendList.clear();
                         newfriendList.addAll(list);
                         contactView.showNewFriend(newfriendList.size());
+                    }else{
+                        contactView.showNewFriend(0);//無新好友
                     }
                 }
             }

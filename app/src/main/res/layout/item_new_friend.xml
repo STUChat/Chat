@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/contact_item_new_friend_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/new_friend_item_photo"
+            android:layout_width="@dimen/contact_photo_size"
+            android:layout_height="@dimen/contact_photo_size"
+            android:layout_marginTop="@dimen/border_magin"
+            android:layout_marginBottom="@dimen/border_magin"
+            android:layout_marginRight="@dimen/border_magin"
+            android:layout_marginLeft="@dimen/border_magin"
+            android:layout_gravity="center"
+            android:src="@mipmap/default_photo"/>
+        <TextView
+            android:id="@+id/new_friend_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/middle_border_magin"
+            android:layout_marginTop="@dimen/border_magin"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/black"
+            android:text="好友"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/border_magin">
+        <Button
+            android:id="@+id/new_friend_item_ignore"
+            android:layout_height="@dimen/item_new_friend_btn_height"
+            android:layout_width="@dimen/item_new_friend_btn_width"
+            android:text="@string/new_friend_ignore"
+            android:background="@drawable/white_corner_button">
+        </Button>
+        <Button
+            android:id="@+id/new_friend_item_accept"
+            android:layout_height="@dimen/item_new_friend_btn_height"
+            android:layout_width="@dimen/item_new_friend_btn_width"
+            android:layout_marginLeft="@dimen/border_magin"
+            android:text="@string/new_friend_accept"
+            android:textColor="@color/white"
+            android:background="@drawable/primary_color_corner_button">
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

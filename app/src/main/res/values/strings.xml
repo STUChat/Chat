@@ -56,4 +56,7 @@
     <!--好友信息-->
     <string name="friend_info_add_friend">添加好友</string>
     <string name="friend_info_message">发消息</string>
+    <string name="new_friend_ignore">忽略</string>
+    <string name="new_friend_accept">接受</string>
+
 </resources>

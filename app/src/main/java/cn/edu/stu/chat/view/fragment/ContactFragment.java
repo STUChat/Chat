@@ -129,6 +129,12 @@ public class ContactFragment extends BaseFragment implements View.OnClickListene
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        contactPresenter.init();
+    }
+
     /**
      * 显示申请好友
      * @param num
@@ -137,7 +143,11 @@ public class ContactFragment extends BaseFragment implements View.OnClickListene
     public void showNewFriend(int num){
         listView.setVisibility(View.VISIBLE);
         TextView numText = (TextView)headerView.findViewById(R.id.contact_item_new_friend);
-        headerView.findViewById(R.id.contact_item_new_friend_num_layout).setVisibility(View.VISIBLE);
-        numText.setText(num+"");
+        if(num>=1) {
+            headerView.findViewById(R.id.contact_item_new_friend_num_layout).setVisibility(View.VISIBLE);
+            numText.setText(num + "");
+        }else{
+            headerView.findViewById(R.id.contact_item_new_friend_num_layout).setVisibility(View.GONE);
+        }
     }
 }
