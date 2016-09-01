@@ -58,6 +58,8 @@ public class Constant {
      * 忘记密码标题
      */
     public final static String ForgotPwdTitle = "忘记密码";
+
+    public final static long  DETECTED_TIME = 1000 * 60;
     /**
      * 他人详细信息标题
      */
