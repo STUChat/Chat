@@ -60,6 +60,7 @@
 
     <!--反馈-->
     <dimen name="feedback_edit_height">350dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
 
     <!--好友信息-->
     <dimen name="friend_info_size">250dp</dimen>
