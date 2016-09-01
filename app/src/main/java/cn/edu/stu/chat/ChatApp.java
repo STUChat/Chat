@@ -44,8 +44,9 @@ public class ChatApp extends Application {
                 if(client == null || !client.getClientThread().isAlive()) {
                     client = new MessageClient();
                     recvQ = client.getRecvQ();
+                    sendQ = client.getSendQ();
                     sendQ.add("id2#id1#hello");
-                    client.setSendQ(sendQ);
+                   // client.setSendQ(sendQ);
                 }
             }
         }
@@ -57,30 +58,12 @@ public class ChatApp extends Application {
      */
     static int x = 0;
     public void detected(){
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(true){
-                    try {
-                        Log.e("detected",""+x++);
-                        Thread.sleep(Constant.DETECTED_TIME);
-                        if(!client.getClientThread().isAlive()) {
-                            client = getClient();
-                            Log.e("detected","I am a new client");
-                        }
 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }).start();
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        sendQ = new LinkedList<>();
         client = getClient();
         detected();
         recvMessage();
@@ -96,7 +79,7 @@ public class ChatApp extends Application {
         public void handleMessage(Message msg){
             switch (msg.what){
                 case SHOW_MESSAGE:
-                    Toast.makeText(ChatApp.this,getRecvQ().poll(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ChatApp.this,getRecvQ().peek(),Toast.LENGTH_SHORT).show();
                     break;
             }
         }
@@ -126,7 +109,7 @@ public class ChatApp extends Application {
     @Override
     public void onTerminate() {
         super.onTerminate();
-        getSendQ().add("id2#id1#END");
+
     }
 
     /**

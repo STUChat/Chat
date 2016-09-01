@@ -97,12 +97,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         ft.replace(R.id.tab_fragment, fragment).commit();
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        ChatApp app = (ChatApp) getApplication();
-        app.getSendQ().add("id2#id1#END");
-    }
+
 
     private void initFragmentState() {
         findViewById(R.id.image_messaging).setSelected(false);

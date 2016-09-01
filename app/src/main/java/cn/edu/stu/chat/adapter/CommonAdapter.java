@@ -12,8 +12,8 @@ import java.util.List;
  * Created by Terence on 2016/8/26.
  */
 public abstract class CommonAdapter<T> extends BaseAdapter {
-    public List<T> datas;
-    private Context context;
+    volatile public List<T> datas;
+    public Context context;
     public LayoutInflater inflater;
     public CommonAdapter(Context context, List<T> datas){
         this.context = context;
