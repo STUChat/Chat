@@ -1,9 +1,15 @@
 package cn.edu.stu.chat.view.fragment;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
+import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,9 +21,14 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnItemClick;
+import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.adapter.MessageAdapter;
+import cn.edu.stu.chat.client.IMessageManager;
+import cn.edu.stu.chat.client.IOnNewMessageArrivedListener;
+import cn.edu.stu.chat.client.MessageService;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.MessageDetailModel;
 import cn.edu.stu.chat.model.MessageModel;
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.activity.MessageActivity;
@@ -31,11 +42,48 @@ public class MessagingFragment extends BaseFragment implements AdapterView.OnIte
     private ListView msgListView;
     private List<MessageModel> datas;
     private MessageAdapter messageAdapter;
+    private IMessageManager mManager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
+        Intent intent = new Intent(getActivity(), MessageService.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user",((ChatApp)getActivity().getApplication()).getUser());
+        intent.putExtras(bundle);
+        getActivity().bindService(intent,mConnection, Context.BIND_AUTO_CREATE);
     }
+
+    private ServiceConnection mConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+            IMessageManager messageManager = IMessageManager.Stub.asInterface(iBinder);
+            try{
+                mManager = messageManager;
+                messageManager.registerListener(newMessageArrivedListener);
+                mManager.sendMessage(new MessageDetailModel("id2",1,"hello, i am service"));
+            }catch (RemoteException e){
+                e.printStackTrace();
+            }
+        }
+        @Override
+        public void onServiceDisconnected(ComponentName componentName) {
+        }
+    };
+
+    private IOnNewMessageArrivedListener newMessageArrivedListener = new IOnNewMessageArrivedListener.Stub(){
+
+        @Override
+        public void onNewMessageArrived(String id) throws RemoteException {
+            List messageList = mManager.getMessage(id);
+            if(messageList!=null && !messageList.isEmpty()){
+//                datas.addAll(messageList);
+//                handler.sendEmptyMessage(NEW_MESSAGE);
+            }
+        }
+    };
+
     @Override
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -64,5 +112,19 @@ public class MessagingFragment extends BaseFragment implements AdapterView.OnIte
         Intent intent = new Intent(getActivity(), MessageActivity.class);
         intent.putExtra("friendId", datas.get(i).getFriendId());
         startActivity(intent);
+    }
+
+    @Override
+    public void onDestroy(){
+        if(mManager!=null && mManager.asBinder().isBinderAlive()){
+            try{
+                mManager.unRegisterListener(newMessageArrivedListener);
+            }catch (RemoteException e){
+                e.printStackTrace();
+            }
+        }
+        getActivity().unbindService(mConnection);
+        super.onDestroy();
+        Log.e("TAG", "unbindservice");
     }
 }

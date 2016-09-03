@@ -1,18 +1,25 @@
 package cn.edu.stu.chat.model;
 
-import java.io.Serializable;
+import android.os.Parcel;
+import android.os.Parcelable;
+
 
 /**
  * Created by Terence on 2016/8/25.
  */
-public class MessageDetailModel implements Serializable {
-    private static final long serialVersionUID = 3866532882035322531L;
+public class MessageDetailModel implements Parcelable {
     private String userId;
-    private String name;
+    private int type;
     private String msg;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
+    public MessageDetailModel(String userId,int type,String msg){
+        this.userId = userId;
+        this.type = type;
+        this.msg = msg;
+    }
+
+    public MessageDetailModel(){
+
     }
 
     public String getUserId() {
@@ -23,12 +30,12 @@ public class MessageDetailModel implements Serializable {
         this.userId = userId;
     }
 
-    public String getName() {
-        return name;
+    public int getType() {
+        return type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setType(int type) {
+        this.type = type;
     }
 
     public String getMsg() {
@@ -37,5 +44,40 @@ public class MessageDetailModel implements Serializable {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    public String toString(){
+        return userId+"#"+type+"#"+msg;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int flag) {
+        parcel.writeString(userId);
+        parcel.writeInt(type);
+        parcel.writeString(msg);
+    }
+
+    public static final Creator<MessageDetailModel> CREATOR = new Creator<MessageDetailModel>(){
+
+        @Override
+        public MessageDetailModel createFromParcel(Parcel parcel) {
+            return new MessageDetailModel(parcel);
+        }
+
+        @Override
+        public MessageDetailModel[] newArray(int i) {
+            return new MessageDetailModel[i];
+        }
+    };
+
+    private MessageDetailModel(Parcel parcel){
+        userId = parcel.readString();
+        type = parcel.readInt();
+        msg = parcel.readString();
     }
 }

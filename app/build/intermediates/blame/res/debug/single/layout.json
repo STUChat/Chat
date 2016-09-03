@@ -1,238 +1,302 @@
 [
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_lines.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_media_action.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_forgot.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_forgot.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message_list_item.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\message_list_item.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_part_time.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/item_search_friend_footer.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/item_search_friend_footer.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_media_cancel_action.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/message.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/message.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/alert_dialog.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/cn.pedant.sweetalert/library/1.2/res/layout/alert_dialog.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_change_user_info.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_change_user_info.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottom_bar.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\bottom_bar.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_messaging.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\fragment_messaging.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_change_pwd.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_change_pwd.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\notification_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/item_search_friend.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/item_search_friend.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_screen_simple.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/message_detail_item_mine.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/message_detail_item_mine.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/imageselector_activity.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.yancy.imageselector/imageselector/1.3.3/res/layout/imageselector_activity.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/imageselector_title_bar.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.yancy.imageselector/imageselector/1.3.3/res/layout/imageselector_title_bar.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_friend_info.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_friend_info.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/imageselector_main_fragment.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.yancy.imageselector/imageselector/1.3.3/res/layout/imageselector_main_fragment.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_search_view.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message_detail_item.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\message_detail_item.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/fragment_mine.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/fragment_mine.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_media.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/imageselector_item_folder.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.yancy.imageselector/imageselector/1.3.3/res/layout/imageselector_item_folder.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\fragment_contact.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_welcome.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_welcome.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_friend.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_search_friend.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/message_detail_item.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/message_detail_item.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.2\\res\\layout\\alert_dialog.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/main_toolbar.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/main_toolbar.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_media_cancel_action.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_contact.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\item_contact.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_register.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_register.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_forgot_backup.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_forgot_backup.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_big_media_narrow.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/imageselector_item_camera.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.yancy.imageselector/imageselector/1.3.3/res/layout/imageselector_item_camera.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_forgot.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_forgot.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_new_friend.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_new_friend.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/item_new_friend.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/item_new_friend.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_mine.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\fragment_mine.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/notification_layout.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_info.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_user_info.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_toolbar.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\main_toolbar.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/item_search_friend_footer_nodata.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/item_search_friend_footer_nodata.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_base.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_base.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\activity_message.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/item_contact.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/item_contact.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/imageselector_item_image.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.yancy.imageselector/imageselector/1.3.3/res/layout/imageselector_item_image.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_big_media.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/fragment_messaging.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/fragment_messaging.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\message.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_screen_toolbar.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message_detail_item_mine.xml",
-        "source": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\layout\\message_detail_item_mine.xml"
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/fragment_contact.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/fragment_contact.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/item_contact_header.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/item_contact_header.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/bottom_bar.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/bottom_bar.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_feedback.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_feedback.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/message_list_item.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/message_list_item.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_base.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_base.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_search_friend.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_search_friend.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_user_info.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_user_info.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/activity_message.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/layout/activity_message.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_mode_close_item_material.xml"
     }
 ]

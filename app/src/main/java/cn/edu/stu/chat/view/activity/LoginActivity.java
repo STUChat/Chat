@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.client.MessageService;
 import cn.edu.stu.chat.http.NetworkHelper;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.User;
@@ -49,6 +50,11 @@ public class LoginActivity extends BaseActivity implements ILoginView{
         presenter.attach(this);
         presenter.init();
         ButterKnife.bind(this);
+        Intent intent = new Intent(this, MessageService.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user",((ChatApp)getApplication()).getUser());
+        intent.putExtras(bundle);
+        startService(intent);
     }
 
     private void initView() {

@@ -15,8 +15,8 @@ import java.util.Scanner;
 import cn.edu.stu.chat.model.Constant;
 
 public  class ClientThread extends Thread{
-//	public static String server = "127.0.0.1";
-	public static String server = "119.29.206.150";
+	public static String server = "192.168.178.72";
+//	public static String server = "119.29.206.150";
 	public static int port = 8189;
 	volatile private Queue<String> sendQ;
 	volatile private Queue<String> recvQ;

@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="24" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="cn.edu.stu.chat.ChatApp"
@@ -44,9 +45,23 @@
         <activity android:name="cn.edu.stu.chat.view.activity.LoginActivity" />
         <activity android:name="cn.edu.stu.chat.view.activity.ForgotActivity" />
         <activity android:name="cn.edu.stu.chat.view.activity.SearchFriendActivity" />
-        <activity android:name="cn.edu.stu.chat.view.api.BaseActivity" />
         <activity android:name="cn.edu.stu.chat.view.activity.MessageActivity" />
         <activity android:name="cn.edu.stu.chat.view.activity.UserInfoActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.UpdateUserInfoActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.ChangePwdActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.FeedBackActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.FriendInfoActivity" />
+        <activity android:name="cn.edu.stu.chat.view.activity.NewFriendActivity" />
+        <activity android:name="cn.edu.stu.chat.view.api.BaseActivity" />
+
+        <service
+            android:name="cn.edu.stu.chat.client.MessageService"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.yancy.imageselector.ImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ImageSelectorTheme" />
     </application>
 
 </manifest>

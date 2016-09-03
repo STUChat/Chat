@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.client.MessageService;
 import cn.edu.stu.chat.model.Constant;
 import cn.edu.stu.chat.model.User;
 import cn.edu.stu.chat.presenter.WelcomePresenter;
@@ -39,7 +40,6 @@ public class WelcomeActivity extends BaseActivity implements IWelcomeView {
         app = (ChatApp) getApplicationContext();
         presenter = new WelcomePresenter();
         presenter.attach(this);
-
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

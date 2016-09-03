@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+        "outputFile": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/values-sw600dp-v13/values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -26,17 +26,17 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 124,
-                    "endColumn": 68,
-                    "endOffset": 188
+                    "endColumn": 69,
+                    "endOffset": 189
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
                         "startOffset": 124,
-                        "endColumn": 68,
-                        "endOffset": 188
+                        "endColumn": 69,
+                        "endOffset": 189
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 193,
-                    "endColumn": 69,
-                    "endOffset": 258
+                    "startOffset": 194,
+                    "endColumn": 73,
+                    "endOffset": 263
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 193,
-                        "endColumn": 69,
-                        "endOffset": 258
+                        "startOffset": 194,
+                        "endColumn": 73,
+                        "endOffset": 263
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 263,
-                    "endColumn": 73,
-                    "endOffset": 332
+                    "startOffset": 268,
+                    "endColumn": 75,
+                    "endOffset": 339
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 263,
-                        "endColumn": 73,
-                        "endOffset": 332
+                        "startOffset": 268,
+                        "endColumn": 75,
+                        "endOffset": 339
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 337,
-                    "endColumn": 75,
-                    "endOffset": 408
+                    "startOffset": 344,
+                    "endColumn": 58,
+                    "endOffset": 398
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 337,
-                        "endColumn": 75,
-                        "endOffset": 408
+                        "startOffset": 344,
+                        "endColumn": 58,
+                        "endOffset": 398
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 413,
-                    "endColumn": 58,
-                    "endOffset": 467
+                    "startOffset": 403,
+                    "endColumn": 70,
+                    "endOffset": 469
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 413,
-                        "endColumn": 58,
-                        "endOffset": 467
+                        "startOffset": 403,
+                        "endColumn": 70,
+                        "endOffset": 469
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 472,
-                    "endColumn": 70,
-                    "endOffset": 538
+                    "startOffset": 474,
+                    "endColumn": 67,
+                    "endOffset": 537
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 472,
-                        "endColumn": 70,
-                        "endOffset": 538
+                        "startOffset": 474,
+                        "endColumn": 67,
+                        "endOffset": 537
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 543,
-                    "endColumn": 67,
-                    "endOffset": 606
+                    "startOffset": 542,
+                    "endColumn": 54,
+                    "endOffset": 592
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 543,
-                        "endColumn": 67,
-                        "endOffset": 606
+                        "startOffset": 542,
+                        "endColumn": 54,
+                        "endOffset": 592
                     }
                 }
             }

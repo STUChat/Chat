@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Code\\Android_Studio\\Chat\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "/home/cheng/program/program/code/androidProject/Chat/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "D:\\Code\\Android_Studio\\Chat\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "/home/cheng/program/program/code/androidProject/Chat/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 295,
+                        "startOffset": 291,
                         "endColumn": 57,
-                        "endOffset": 348
+                        "endOffset": 344
                     }
                 }
             }

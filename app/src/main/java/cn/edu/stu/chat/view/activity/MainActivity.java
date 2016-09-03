@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import cn.edu.stu.chat.ChatApp;
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.client.MessageService;
 import cn.edu.stu.chat.utils.ResidentNotificationHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.fragment.ContactFragment;
@@ -29,6 +29,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
         initFragment(savedInstanceState);
         initView();
+        Intent intent = new Intent(this, MessageService.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user",((ChatApp)getApplication()).getUser());
+        intent.putExtras(bundle);
+        startService(intent);
         notificationChange(getIntent());
     }
 
