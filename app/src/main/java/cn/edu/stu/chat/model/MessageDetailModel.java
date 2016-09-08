@@ -11,11 +11,13 @@ public class MessageDetailModel implements Parcelable {
     private String userId;
     private int type;
     private String msg;
+    private String time;
 
-    public MessageDetailModel(String userId,int type,String msg){
+    public MessageDetailModel(String userId,int type,String msg,String time){
         this.userId = userId;
         this.type = type;
         this.msg = msg;
+        this.time = time;
     }
 
     public MessageDetailModel(){
@@ -60,6 +62,7 @@ public class MessageDetailModel implements Parcelable {
         parcel.writeString(userId);
         parcel.writeInt(type);
         parcel.writeString(msg);
+        parcel.writeString(time);
     }
 
     public static final Creator<MessageDetailModel> CREATOR = new Creator<MessageDetailModel>(){
@@ -79,5 +82,14 @@ public class MessageDetailModel implements Parcelable {
         userId = parcel.readString();
         type = parcel.readInt();
         msg = parcel.readString();
+        time = parcel.readString();
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }

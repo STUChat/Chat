@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.yancy.imageselector.ImageConfig;
 import com.yancy.imageselector.ImageSelector;
 import com.yancy.imageselector.ImageSelectorActivity;
@@ -32,7 +33,6 @@ import cn.edu.stu.chat.utils.GlideLoader;
 import cn.edu.stu.chat.utils.ToastHelper;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.IUserInfoView;
-import cn.edu.stu.chat.view.widget.CircleImageView;
 
 /**
  * Created by dell on 2016/8/25.
@@ -88,6 +88,11 @@ public class UserInfoActivity extends BaseActivity implements IUserInfoView{
         if(user.getGender().equals("1")) genderTextview.setText("男");
         if(user.getGender().equals("2")) genderTextview.setText("女");
         mottoTextview.setText(user.getMotto());
+        Glide.with(this)
+                .load(user.getHeadUrl())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.mipmap.default_photo)
+                .into(photo);
     }
 
     @Override

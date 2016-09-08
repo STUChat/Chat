@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.annotation.DrawableRes;
 import android.support.v4.app.NotificationCompat;
@@ -17,7 +18,9 @@ import java.util.Date;
 import java.util.Locale;
 
 import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.model.Friend;
 import cn.edu.stu.chat.view.activity.MainActivity;
+import cn.edu.stu.chat.view.activity.MessageActivity;
 
 /**
  * Created by dell on 2016/8/26.
@@ -28,7 +31,7 @@ public class ResidentNotificationHelper {
     public static final int NOTICE_ID_TYPE_0 = R.string.app_name;
 
     @TargetApi(16)
-    public static void sendResidentNoticeType0(Context context, String title, String content, @DrawableRes int res) {
+    public static void sendResidentNoticeType0(Context context, String title, String content, @DrawableRes int res, Friend friend) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
 //        builder.setOngoing(true);
         builder.setPriority(NotificationCompat.PRIORITY_MAX);
@@ -38,7 +41,10 @@ public class ResidentNotificationHelper {
         remoteViews.setTextViewText(R.id.time_tv, getTime());
         remoteViews.setImageViewResource(R.id.icon_iv, R.mipmap.logo);
         //remoteViews.setInt(R.id.close_iv, "setColorFilter", getIconColor());
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, MessageActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("friend",friend);
+        intent.putExtras(bundle);
         intent.putExtra(NOTICE_ID_KEY, NOTICE_ID_TYPE_0);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         int requestCode = (int) SystemClock.uptimeMillis();

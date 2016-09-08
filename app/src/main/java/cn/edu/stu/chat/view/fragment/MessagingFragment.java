@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +30,10 @@ import cn.edu.stu.chat.client.IMessageManager;
 import cn.edu.stu.chat.client.IOnNewMessageArrivedListener;
 import cn.edu.stu.chat.client.MessageService;
 import cn.edu.stu.chat.model.Constant;
+import cn.edu.stu.chat.model.Friend;
 import cn.edu.stu.chat.model.MessageDetailModel;
 import cn.edu.stu.chat.model.MessageModel;
+import cn.edu.stu.chat.utils.ContactDbUtil;
 import cn.edu.stu.chat.view.activity.MainActivity;
 import cn.edu.stu.chat.view.activity.MessageActivity;
 import cn.edu.stu.chat.view.api.BaseFragment;
@@ -62,7 +66,9 @@ public class MessagingFragment extends BaseFragment implements AdapterView.OnIte
             try{
                 mManager = messageManager;
                 messageManager.registerListener(newMessageArrivedListener);
-                mManager.sendMessage(new MessageDetailModel("id2",1,"hello, i am service"));
+//                SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+//                String date = sDateFormat.format(new java.util.Date());
+//                mManager.sendMessage(new MessageDetailModel("id2",1,"hello, i am service",date));
             }catch (RemoteException e){
                 e.printStackTrace();
             }
@@ -91,26 +97,20 @@ public class MessagingFragment extends BaseFragment implements AdapterView.OnIte
         View view = inflater.inflate(R.layout.fragment_messaging, null);
         msgListView = (ListView) view.findViewById(R.id.message_listview);
         MessageModel msg = new MessageModel();
-        msg.setFriendId("lawliex");
-        msg.setMsg("世界那么大，我想去看看");
-        msg.setNickName("Terence");
-        msg.setPhotoUrl("http://lawliex.cn/terence.jpg");
-        msg.setTime("12:00");
         datas = new ArrayList<>();
-
-
-        for(int i = 0 ;i < 100; i++)
-            datas.add(msg);
         messageAdapter = new MessageAdapter(getContext(), datas);
         msgListView.setAdapter(messageAdapter);
         msgListView.setOnItemClickListener(this);
+        new getMessageContact(getContext(),((ChatApp)getActivity().getApplication()).getUser().getToken(),datas,messageAdapter).execute();
         return view;
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Intent intent = new Intent(getActivity(), MessageActivity.class);
-        intent.putExtra("friendId", datas.get(i).getFriendId());
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("friend",datas.get(i).getFriend());
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 
@@ -126,5 +126,34 @@ public class MessagingFragment extends BaseFragment implements AdapterView.OnIte
         getActivity().unbindService(mConnection);
         super.onDestroy();
         Log.e("TAG", "unbindservice");
+    }
+
+    private static class getMessageContact extends AsyncTask<Object,Integer,ArrayList<Friend>>{
+        private Context context;
+        private String token;
+        private List datas;
+        private MessageAdapter adapter;
+        public getMessageContact(Context context,String token,List datas,MessageAdapter adapter){
+            this.context = context;
+            this.token = token;
+            this.datas = datas;
+            this.adapter = adapter;
+        }
+
+        @Override
+        protected ArrayList<Friend> doInBackground(Object... objects) {
+            return new ContactDbUtil(context).getAllData(token);
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Friend> friends) {
+            for(Friend friend:friends){
+                Log.e("TAG", "onPostExecute: "+friend.toString() );
+                MessageModel model = new MessageModel();
+                model.setFriend(friend);
+                datas.add(model);
+                adapter.notifyDataSetChanged();
+            }
+        }
     }
 }

@@ -8,6 +8,10 @@ import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import java.util.List;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.model.MessageModel;
@@ -26,18 +30,23 @@ public class MessageAdapter extends CommonAdapter<MessageModel> {
             view = (View)inflater.inflate(R.layout.message_list_item, viewGroup, false);
             viewHolder = new ViewHolder();
             viewHolder.msgText =(TextView) view.findViewById(R.id.msgText);
-            viewHolder.photo = (ImageView) view.findViewById(R.id.photo);
+            viewHolder.photo = (ImageView) view.findViewById(R.id.message_photo);
             viewHolder.nickText = (TextView)view.findViewById(R.id.nickText);
             viewHolder.timeText = (TextView)view.findViewById(R.id.timeText);
             view.setTag(viewHolder);
         }else{
             viewHolder = (ViewHolder) view.getTag();
         }
-        viewHolder.timeText.setText(datas.get(i).getTime() + "");
-        viewHolder.nickText.setText(datas.get(i).getNickName() + "");
-//        viewHolder.photo
-        viewHolder.msgText.setText(datas.get(i).getMsg() + "");
-
+        if(datas.get(i).getMessageDetailModel()!=null) {
+            viewHolder.timeText.setText(datas.get(i).getMessageDetailModel().getTime() + "");
+            viewHolder.msgText.setText(datas.get(i).getMessageDetailModel().getMsg() + "");
+        }
+        viewHolder.nickText.setText(datas.get(i).getFriend().getName()+ "");
+        Glide.with(context)
+                .load(datas.get(i).getFriend().getHeadUrl())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.mipmap.default_photo)
+                .into(viewHolder.photo);
         return view;
     }
     final class ViewHolder{

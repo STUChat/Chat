@@ -13,6 +13,19 @@ public class Friend implements Serializable{
     String email;//账户email
     String userID;//用户id
 
+    public Friend(){
+
+    }
+
+    public Friend(String headUrl,String name,String gender,String motto,String email,String userID){
+        this.headUrl = headUrl;
+        this.name = name;
+        this.gender = gender;
+        this.motto = motto;
+        this.email = email;
+        this.userID = userID;
+    }
+
     public String getUserID() {
         return userID;
     }

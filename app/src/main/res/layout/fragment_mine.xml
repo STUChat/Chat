@@ -13,13 +13,13 @@
         android:orientation="horizontal"
         android:background="@color/white"
         android:clickable="true">
-        <cn.edu.stu.chat.view.widget.CircleImageView
+        <ImageView
             android:id="@+id/mine_photo"
             android:layout_width="@dimen/mine_photo_size"
             android:layout_height="@dimen/mine_photo_size"
             android:src="@mipmap/default_photo"
             android:layout_margin="@dimen/mine_border_margin">
-        </cn.edu.stu.chat.view.widget.CircleImageView>
+        </ImageView>
         <TextView
             android:id="@+id/mine_name"
             android:layout_height="wrap_content"

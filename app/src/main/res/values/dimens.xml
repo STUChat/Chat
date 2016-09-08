@@ -64,15 +64,15 @@
 
     <!--好友信息-->
     <dimen name="friend_info_size">250dp</dimen>
-    <dimen name="friend_info_photo_size">60dp</dimen>
+    <dimen name="friend_info_photo_size">80dp</dimen>
     <dimen name="friend_info_border_margin">20dp</dimen>
-    <dimen name="friend_info_nickname_top_margin">30dp</dimen>
-    <dimen name="friend_info_nickname_left_margin">30dp</dimen>
-    <dimen name="friend_info_gender_top_margin">30dp</dimen>
+    <dimen name="friend_info_nickname_top_margin">20dp</dimen>
+    <dimen name="friend_info_nickname_left_margin">20dp</dimen>
+    <dimen name="friend_info_gender_top_margin">20dp</dimen>
     <dimen name="friend_info_photo_top_margin">50dp</dimen>
     <dimen name="friend_info_motto_left_margin">30dp</dimen>
     <dimen name="friend_info_motto_top_margin">10dp</dimen>
-    <dimen name="friend_info_btn_top_margin">40dp</dimen>
+    <dimen name="friend_info_btn_top_margin">25dp</dimen>
 
     <!--新的好友-->
     <dimen name="item_new_friend_btn_height">35dp</dimen>

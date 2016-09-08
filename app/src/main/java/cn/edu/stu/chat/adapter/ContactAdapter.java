@@ -10,6 +10,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import java.util.List;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.model.Constant;
@@ -73,7 +77,11 @@ public class ContactAdapter extends BaseAdapter {
             holder = (ViewHolder)convertView.getTag();
         }
         holder.name.setText(list.get(i).getName());
-
+        Glide.with(context)
+                .load(list.get(i).getHeadUrl())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.mipmap.default_photo)
+                .into(holder.image);
         return convertView;
     }
 

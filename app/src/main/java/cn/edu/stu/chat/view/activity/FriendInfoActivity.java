@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -75,6 +78,11 @@ public class FriendInfoActivity extends BaseActivity implements IFriendInfoView{
             genderImage.setVisibility(View.INVISIBLE);
         }
         mottoTextview.setText(friend.getMotto());
+        Glide.with(this)
+                .load(friend.getHeadUrl())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.mipmap.default_photo)
+                .into(photoImageview);
     }
 
     @Override

@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -24,14 +27,13 @@ import cn.edu.stu.chat.view.activity.LoginActivity;
 import cn.edu.stu.chat.view.activity.UserInfoActivity;
 import cn.edu.stu.chat.view.api.BaseActivity;
 import cn.edu.stu.chat.view.api.BaseFragment;
-import cn.edu.stu.chat.view.widget.CircleImageView;
 
 /**
  * Created by cheng on 16-8-22.
  */
 public class MineFragment extends BaseFragment {
     @BindView(R.id.mine_photo)
-    CircleImageView photoImage;
+    ImageView photoImage;
     @BindView(R.id.mine_name)
     TextView nameTextView;
     @BindView(R.id.mine_gender_image)
@@ -66,6 +68,11 @@ public class MineFragment extends BaseFragment {
         }else{
             genderImage.setVisibility(View.GONE);
         }
+        Glide.with(this)
+                .load(user.getHeadUrl())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.mipmap.default_photo)
+                .into(photoImage);
     }
 
     @OnClick(R.id.mine_change_pwd)

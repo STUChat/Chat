@@ -1,12 +1,15 @@
 package cn.edu.stu.chat.client;
 
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.util.Log;
+
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,8 +17,16 @@ import java.util.Queue;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import cn.edu.stu.chat.ChatApp;
+import cn.edu.stu.chat.R;
+import cn.edu.stu.chat.http.HttpMethods;
+import cn.edu.stu.chat.model.ChatResponse;
+import cn.edu.stu.chat.model.Friend;
 import cn.edu.stu.chat.model.MessageDetailModel;
+import cn.edu.stu.chat.model.UriConstant;
 import cn.edu.stu.chat.model.User;
+import cn.edu.stu.chat.utils.JsonHelper;
+import cn.edu.stu.chat.utils.ResidentNotificationHelper;
+import rx.Subscriber;
 
 /**
  * Created by cheng on 16-9-3.
@@ -113,6 +124,7 @@ public class MessageService extends Service {
     }
     // id1#id2#type#content
     private void notifyNewMessage(String msg) {
+        msg = msg.replaceAll(" ", "");
         Log.e("tag","notify-->"+msg);
         if(!msg.contains("#"))
             return;
@@ -121,7 +133,9 @@ public class MessageService extends Service {
         String id2 = str[1];
         int type =Integer.parseInt(str[2]);
         String content =str[3];
-        MessageDetailModel model = new MessageDetailModel(id2,type,content);
+        SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+        String date = sDateFormat.format(new java.util.Date());
+        MessageDetailModel model = new MessageDetailModel(id2,type,content,date);
         List<MessageDetailModel> list = messageListMap.get(id2);
         if(list ==null){
             list = new CopyOnWriteArrayList();
@@ -140,7 +154,36 @@ public class MessageService extends Service {
                 }
             }
         }
+
+//        if(N==0){
+//            sendNotication(getBaseContext(),model);
+//        }
         listenerList.finishBroadcast();
+    }
+
+    private void sendNotication(final Context context, final MessageDetailModel model) {
+        Map<String,String> map = new HashMap<>();
+        map.put("token",user.getToken());
+        map.put("userID",model.getUserId());
+        HttpMethods.getInstance().baseUrl(UriConstant.HOST).subscribe(new Subscriber<ChatResponse>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(ChatResponse chatResponse) {
+                Friend friend = JsonHelper.getResponseValue(chatResponse,Friend.class);
+                if(friend!=null){
+                    ResidentNotificationHelper.sendResidentNoticeType0(context,friend.getName(),model.getMsg(), R.mipmap.ic_launcher,friend);
+                }
+            }
+        }).post(UriConstant.GetUserInfo,map);
     }
 
     public List<MessageDetailModel> getMessageList(String id){

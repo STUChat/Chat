@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import java.util.List;
 import cn.edu.stu.chat.R;
 import cn.edu.stu.chat.model.Friend;
@@ -100,7 +103,12 @@ public class SearchFriendAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if(holder instanceof FriendViewHolder){
             ((FriendViewHolder)holder).name.setText(list.get(position).getName());
-//            ((FriendViewHolder)holder).photo.setImageBitmap();
+            Glide.with(context)
+                    .load(list.get(position).getHeadUrl())
+                    .centerCrop()
+                    .placeholder(R.mipmap.default_photo)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .into(((FriendViewHolder) holder).photo);
         }else if(holder instanceof ProgressViewHolder){
             Log.e("pd","hree");
             if (((ProgressViewHolder) holder).pb != null)

@@ -33,20 +33,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.RegisterActivity" />
-        <activity android:name=".view.activity.LoginActivity" />
-        <activity android:name=".view.activity.ForgotActivity" />
-        <activity android:name=".view.activity.SearchFriendActivity" />
-        <activity android:name=".view.activity.MessageActivity"/>
-        <activity android:name=".view.activity.UserInfoActivity"/>
-        <activity android:name=".view.activity.UpdateUserInfoActivity"/>
-        <activity android:name=".view.activity.ChangePwdActivity"/>
-        <activity android:name=".view.activity.FeedBackActivity"/>
-        <activity android:name=".view.activity.FriendInfoActivity"/>
-        <activity android:name=".view.activity.NewFriendActivity"/>
+        <activity android:name=".view.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.ForgotActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.SearchFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.MessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.UserInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.UpdateUserInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.ChangePwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.FeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.FriendInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.NewFriendActivity" android:screenOrientation="portrait"/>
         <activity android:name=".view.api.BaseActivity" />
-        <service android:name=".client.MessageService"
-            android:process=":remote"/>
+        <service android:name=".client.MessageService"/>
     </application>
 
 </manifest>
